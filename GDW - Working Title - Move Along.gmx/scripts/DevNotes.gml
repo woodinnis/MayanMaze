@@ -673,3 +673,12 @@ Created objButtonParent
 
 Game pauses between levels 
 - Options are available to try again, continue playing, or return to the menu
+
+DEBUG object created
+- Press 'D' to use debug mode
+
+Debug functions currently available
+- Increase/decrease player speed
+- Change player direction
+- Player speed display
+- Visual counter of tiles moved

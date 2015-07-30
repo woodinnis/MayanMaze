@@ -193,6 +193,8 @@
       <script>scripts\scrResetBtnPressed.gml</script>
     </scripts>
     <script>scripts\FuncRoomNext.gml</script>
+    <script>scripts\DEBUG_GUI.gml</script>
+    <script>scripts\DEBUG_STEP.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_Fiesta</font>
@@ -204,6 +206,7 @@
       <font>fonts\font_Fruktur_med</font>
       <font>fonts\font_Fruktur</font>
     </fonts>
+    <font>fonts\font_debug</font>
   </fonts>
   <objects name="objects">
     <object>objects\objOverlord</object>
@@ -258,6 +261,7 @@
       </objects>
       <object>objects\objResetBtn</object>
     </objects>
+    <object>objects\DEBUG</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menuLarge</room>
