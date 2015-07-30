@@ -19,6 +19,8 @@ if(objOverlord.isPaused == true)
     }
 }
 
+if(objOverlord.gameState == 2)
+    FuncRoomNext();
 
 // Destroy all buttons on screen
 with(objButtonParent)

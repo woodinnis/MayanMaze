@@ -670,3 +670,6 @@ Created a "Continue" button.
 - Will be used in between levels
 
 Created objButtonParent
+
+Game pauses between levels 
+- Options are available to try again, continue playing, or return to the menu
