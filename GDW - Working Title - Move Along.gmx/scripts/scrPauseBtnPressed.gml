@@ -10,13 +10,12 @@ if(objOverlord.isPaused == false)
 
     // Create instance of a restart button
     restartBtn = instance_create((room_width/4) - sprite_get_width(sprMenu)/2, room_height/2 + 150, objRestartBtn);
-//    draw_text((room_width/4) - sprite_get_width(sprMenu)/2, room_height/2 + 150,"Restart");
     
     // Create instance of a menu button    
     menuBtn = instance_create((room_width/2) - sprite_get_width(sprMenuBtn)/2, room_height/2 + 175, objMenuBtn);
     
     // Create instance of a quit button
-    quitBtn = instance_create(room_width/4 * 3 - sprite_get_width(sprMenu)/2, room_height/2 + 150, objQuitBtn);
+    continueBtn = instance_create(room_width/4 * 3 - sprite_get_width(sprMenu)/2, room_height/2 + 150, objContinueBtn);
 
     // Pause walking sound when game pauses
     if(audio_is_playing(sndPlayerWalk))
@@ -30,52 +29,13 @@ if(objOverlord.isPaused == false)
         audio_pause_sound(sndBGMusicGame);
     }
     
-    // Set canWalk to false, and speed to 0
-//    objOverlord.canWalk = false;
-//    objPlayer.speed = 0;
- 
     // Set Paused state to true   
     objOverlord.isPaused = true;
 }
 else
 {
-    instance_activate_all();
-    
-    // Destroy the quit button
-    with(quitBtn)
-    {
-        instance_destroy();
-    }
-    
-    // Destroy the restart button
-    with(restartBtn)
-    {
-        instance_destroy();
-    }
-    
-    // Destroy the menu button
-    with(menuBtn)
-    {
-        instance_destroy();
-    }
-    
-    // Resume walking sound
-    if(audio_is_paused(sndPlayerWalk))
-    {
-        audio_resume_sound(sndPlayerWalk)
-    }
-    
-    // Resume game music
-    if(audio_is_paused(sndBGMusicGame))
-    {
-        audio_resume_sound(sndBGMusicGame);
-    }
-    // Set canWalk to true, and speed to playerSpeed
-//    objOverlord.canWalk = true;
-//    objPlayer.speed = objPlayer.playerSpeed;
-    
-    // Set Paused state to true   
-    objOverlord.isPaused = false;
+    // The Alarm[0] script for the Continue button will unpause the game.
+    scrContinueBtnAlarm0();
 }
 
 // Play the Pause sound

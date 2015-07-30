@@ -31,6 +31,7 @@
         <sprite>sprites\sprLvlSelect05</sprite>
       </sprites>
       <sprite>sprites\sprQuitBtn</sprite>
+      <sprite>sprites\sprContinueBtn</sprite>
       <sprite>sprites\sprRestartBtn</sprite>
       <sprite>sprites\sprGameStartBtn</sprite>
       <sprite>sprites\sprMenuBtn</sprite>
@@ -72,24 +73,12 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
+    <background>background\bgMaze02</background>
+    <background>background\bgMaze05</background>
     <background>background\bgMayaFace</background>
     <background>background\bgMainMenu</background>
     <background>background\bgGame</background>
     <background>background\bgLvlSelect</background>
-    <backgrounds name="OBSOLETE">
-      <background>background\bgMaze07</background>
-      <background>background\bgMaze03</background>
-      <background>background\bgTileset01</background>
-      <background>background\bgMayaGlyph</background>
-      <background>background\bgMainPage_up</background>
-      <background>background\bgBGTile</background>
-      <background>background\bgMainPage_down</background>
-      <background>background\bgMaze04</background>
-      <background>background\bgMaze06</background>
-      <background>background\bgMaze05</background>
-      <background>background\bgMaze02</background>
-      <background>background\bgMaze01</background>
-    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -132,6 +121,11 @@
       </scripts>
       <scripts name="PauseBtn">
         <script>scripts\scrPauseBtnPressed.gml</script>
+      </scripts>
+      <scripts name="ContinueBtn">
+        <script>scripts\scrContinueBtnLMB.gml</script>
+        <script>scripts\scrContinueBtnCreate.gml</script>
+        <script>scripts\scrContinueBtnAlarm0.gml</script>
       </scripts>
       <script>scripts\scrLvlSelectParentLMB.gml</script>
       <script>scripts\scrLvlSelectParentCreate.gml</script>
@@ -221,8 +215,10 @@
         <object>objects\objLvlSelect04</object>
         <object>objects\objLvlSelect05</object>
       </objects>
+      <object>objects\objButtonParent</object>
       <object>objects\objLvlSelectBtn</object>
       <object>objects\objQuitBtn</object>
+      <object>objects\objContinueBtn</object>
       <object>objects\objRestartBtn</object>
       <object>objects\objMenuBtn</object>
       <object>objects\objGameStartBtn</object>

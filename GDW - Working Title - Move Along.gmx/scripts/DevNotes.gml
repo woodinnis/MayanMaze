@@ -661,3 +661,12 @@ Fixed error where sound was not restarting when game restarted from pause menu
 // 30 July, 2015 //
 
 Replaced game background with plain tile grid for ease of play.
+
+Created repository for Mentor Studio version of Mayan Maze
+
+Created a "Continue" button.
+- Replaces the "Quit" button on the pause menu
+- scrContinueBtnAlarm0 performs unpause functions
+- Will be used in between levels
+
+Created objButtonParent
