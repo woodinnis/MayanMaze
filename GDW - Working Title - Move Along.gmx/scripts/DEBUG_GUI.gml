@@ -8,4 +8,8 @@ if(debug)
         draw_text(10,52,"Player Speed: " + string(objPlayer.speed));
     
     draw_text(10,64,"Tile Count: " + string(objOverlord.tilesUsed));
+    draw_text(10,76,"Center Point: " + string(view_wview[0]/2) +", " + string(view_hview[0]/2))
+    
+    if(instance_exists(sprMayaFace))
+        draw_text(10,52,"BG Maya X,Y: " + string(sprMayaFace.x) + "," + string(sprMayaFace.y));
 }

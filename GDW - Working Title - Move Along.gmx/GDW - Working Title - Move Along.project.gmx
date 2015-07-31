@@ -36,6 +36,7 @@
       <sprite>sprites\sprGameStartBtn</sprite>
       <sprite>sprites\sprMenuBtn</sprite>
       <sprite>sprites\sprMenu</sprite>
+      <sprite>sprites\sprMayaFace</sprite>
     </sprites>
     <sprites name="Tiles">
       <sprite>sprites\sprWall</sprite>
@@ -92,6 +93,10 @@
       <script>scripts\scrOverlordGUI.gml</script>
       <script>scripts\scrDrawTransition.gml</script>
       <script>scripts\scrOverlordRoomEnd.gml</script>
+    </scripts>
+    <scripts name="Tutorial">
+      <script>scripts\scrTutorialDraw.gml</script>
+      <script>scripts\scrTutorialCreate.gml</script>
     </scripts>
     <scripts name="GUI">
       <scripts name="LvlSelectBtn">
@@ -262,6 +267,7 @@
       <object>objects\objResetBtn</object>
     </objects>
     <object>objects\DEBUG</object>
+    <object>objects\objTutorial</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menuLarge</room>
@@ -277,6 +283,12 @@
       <room>rooms\room_Pause</room>
     </rooms>
   </rooms>
+  <constants number="4">
+    <constant name="LEVEL001TUT">"Move the arrow#to create a path to the exit"</constant>
+    <constant name="LEVEL002TUT">"Use several arrows#to get around walls"</constant>
+    <constant name="LEVEL003TUT">"Avoid obstacles,#like holes"</constant>
+    <constant name="LEVEL004TUT">"Good Luck!"</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

@@ -25,8 +25,10 @@ if((room != room_menuLarge) && (room != room_LvlSelect))
 
     if(isPaused == true)
     {
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_top);
         // Draw background image
-        draw_background(bgMayaFace, x + 50, y + 100);
+        draw_sprite(sprMayaFace,0, view_wview[0]/2,view_hview[0]/3);
     }
 }
 
@@ -36,121 +38,4 @@ msgPaneY = (room_height/3);
 msgX = (room_width/2);
 msgY = msgPaneY + 10
 
-///////////////////////////////////////////////////
-/*                                               */
-/*  Below are blocks of obsolete, or unused code */
-/*                                               */
-/*                                               */
-/*                                               */
-///////////////////////////////////////////////////
 
-
-/* Display a tutorial message on screen for the first four levels
-if(!isPaused)   // Hide the message while paused
-{
-    switch(room)
-    {
-        case room_Maze01:
-        {   
-            draw_set_valign(fa_top);
-            draw_set_alpha(0.3);
-            draw_set_colour(c_teal);
-            draw_rectangle(msgPaneX, msgPaneY, msgPaneX * 2, msgPaneY * 1.5, false);
-            
-            draw_set_alpha(1);
-            draw_set_colour(c_black);
-            draw_set_halign(fa_center);
-            draw_text(msgX, msgY, "Place the arrow#to create a path#to the door");
-            break;
-        }
-        case room_Maze02:
-        {
-            draw_set_valign(fa_top);
-            draw_set_alpha(0.3);
-            draw_set_colour(c_teal);
-            draw_rectangle(msgPaneX - 20, msgPaneY, (msgPaneX * 2) + 20, msgPaneY * 1.5, false);
-            
-            draw_set_alpha(1);
-            draw_set_colour(c_black);
-            draw_set_halign(fa_center);
-            draw_text(msgX, msgY, "Use several arrows#to get around walls");
-            break;
-        }
-        case room_Maze03:
-        {
-            draw_set_valign(fa_top);
-            draw_set_alpha(0.3);
-            draw_set_colour(c_teal);
-            draw_rectangle(msgPaneX, msgPaneY, msgPaneX * 2, msgPaneY * 1.5, false);
-            
-            draw_set_alpha(1);
-            draw_set_colour(c_black);
-            draw_set_halign(fa_center);
-            draw_text(msgX, msgY, "Avoid obstacles,#like holes");
-            break;
-        }
-        case room_Maze04:
-        {
-            draw_set_valign(fa_top);
-            draw_set_alpha(0.3);
-            draw_set_colour(c_teal);
-            draw_rectangle(msgPaneX, msgPaneY, msgPaneX * 2, msgPaneY * 1.5, false);
-            
-            draw_set_alpha(1);
-            draw_set_colour(c_black);
-            draw_set_halign(fa_center);
-            draw_text(msgX, msgY, "Good Luck!");
-            break;
-        }
-    }
-}
-
-
-
-
-
-
-
-/*    
-    // Draw a background to make GUI text and images more visible
-    draw_set_alpha(0.3);
-    draw_rectangle_colour(x, y, room_width, HUDBottom, c_blue, c_blue, c_blue, c_blue, false);
-    
-    // reset alpha to 100%
-    draw_set_alpha(1);
-    
-    // Draw a black bar at the bottom of the HUD background
-    draw_set_colour(c_black);
-    draw_rectangle(x, HUDBottom, room_width, HUDBottom + 5, false);
-*/    
-
-
-
-
-
-
-
-
-/*    
-    if(guiAlpha > 0 && guiAlpha < 1)
-    {
-        // Set text colour
-        draw_set_colour(c_white);
-        
-        // Set alignment and draw GUI text
-        draw_set_valign(fa_top);
-        draw_set_halign(fa_left);
-    //    draw_set_alpha(1);
-        draw_text(x + 20, y + 20, "Maze Number: " + string(room));
-    
-    // Attempted to add a room timer. Could not get it working.
-    // Will see if I can get it working later.
-    
-    //    draw_text(x + 20, y + 40, "Time: " + string(timeUsed));
-    //    alarm[1] = room_speed * 1;
-        
-        // Set alignment and draw GUI text
-        draw_set_halign(fa_right);
-        draw_text(room_width - 20 ,y + 20, "Tiles Moved: " + string(tilesUsed));
-    }
-*/

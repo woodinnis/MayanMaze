@@ -682,3 +682,9 @@ Debug functions currently available
 - Change player direction
 - Player speed display
 - Visual counter of tiles moved
+
+Basic tutorial directions implemented
+- Created objTutorial to handle tutorial operations
+- First four levels now have instructions
+- Room for expansion into further levels
+
