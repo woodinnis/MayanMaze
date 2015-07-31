@@ -87,19 +87,13 @@ else
     }
 }
 
-// Create a Pause Button
+// Create Pause and Fast Forward Buttons
 
 if(room != room_menuLarge && room != room_LvlSelect)
 {
-//    resetBtnX = room_width/3 - sprite_get_width(sprResetBtn)/2;
-    pauseBtnX = room_width/2 - sprite_get_width(sprPauseBtn)/2;
-
-// Begin a new room
-
-newStart = true;        
-//    draw_set_valign(fa_bottom);
-//    draw_set_halign(fa_center);
-//    instance_create(resetBtnX, room_height - 40 ,objResetBtn);
+    pauseBtnX = (room_width/3) - sprite_get_width(sprPauseBtn)/2;
+    FFBtnX = (room_width/3) * 2 - sprite_get_width(sprFFBtn)/2;
     
     instance_create(pauseBtnX, room_height - 40 ,objPauseBtn);
+    instance_create(FFBtnX, room_height - 40 ,objFFbtn);
 }

@@ -45,6 +45,7 @@
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\sprPauseBtn</sprite>
+      <sprite>sprites\sprFFBtn</sprite>
     </sprites>
     <sprites name="Arrows">
       <sprite>sprites\sprDownArrow</sprite>
@@ -215,6 +216,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\objOverlord</object>
+    <object>objects\objTutorial</object>
     <objects name="Menu">
       <objects name="Level Select">
         <object>objects\objLvlSelectParent</object>
@@ -247,6 +249,7 @@
     <objects name="GUI">
       <object>objects\objPlayer</object>
       <object>objects\objPauseBtn</object>
+      <object>objects\objFFbtn</object>
     </objects>
     <objects name="OBSOLETE">
       <objects name="Moving Tiles">
@@ -267,7 +270,6 @@
       <object>objects\objResetBtn</object>
     </objects>
     <object>objects\DEBUG</object>
-    <object>objects\objTutorial</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menuLarge</room>

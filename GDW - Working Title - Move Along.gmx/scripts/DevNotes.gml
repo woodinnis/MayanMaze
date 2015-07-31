@@ -683,8 +683,13 @@ Debug functions currently available
 - Player speed display
 - Visual counter of tiles moved
 
+// 31 July, 2015 //
+
 Basic tutorial directions implemented
 - Created objTutorial to handle tutorial operations
 - First four levels now have instructions
 - Room for expansion into further levels
 
+Fast Forward button created
+- Script, sprites, object added
+- Players can click to increase speed to x8

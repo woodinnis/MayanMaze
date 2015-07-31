@@ -1,6 +1,6 @@
 // Declare and set variables for the Tutorial object
 
-tutorialStarted = false;
+tutorialStarted = true;
 levelComplete = false;
 
 msgX = view_wview[0]/2;
