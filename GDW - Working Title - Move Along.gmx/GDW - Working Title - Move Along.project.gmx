@@ -73,6 +73,9 @@
       <sprite>sprites\sprBGTile</sprite>
       <sprite>sprites\sprResetBtn</sprite>
     </sprites>
+    <sprites name="Circle Effect">
+      <sprite>sprites\spr_effect</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMaze02</background>
@@ -201,6 +204,13 @@
     <script>scripts\FuncRoomNext.gml</script>
     <script>scripts\DEBUG_GUI.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>
+    <scripts name="Circle Effect">
+      <script>scripts\scrCircleEffectCreate.gml</script>
+      <script>scripts\scrCircleEffectAlarm.gml</script>
+      <script>scripts\scrCircleEffectBeginStep.gml</script>
+      <script>scripts\scrCircleEffectRoomStart.gml</script>
+      <script>scripts\scrCircleEffectDraw.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_Fiesta</font>
@@ -270,6 +280,9 @@
       <object>objects\objResetBtn</object>
     </objects>
     <object>objects\DEBUG</object>
+    <objects name="Circle Effect">
+      <object>objects\obj_effect</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menuLarge</room>

@@ -693,3 +693,10 @@ Basic tutorial directions implemented
 Fast Forward button created
 - Script, sprites, object added
 - Players can click to increase speed to x8
+
+// 03 August, 2015 //
+
+Added a circle/iris fade-in/out at the beginning and end of levels.
+- Found on yoyo games forum
+- Activates when objPlayer leaves room
+- Added to asset attribution list

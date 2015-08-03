@@ -29,5 +29,11 @@
 - font_Fiesta
     Ambages font - created by Font Monkey
     http://www.fontmonkey.com/
+
+// Objects //
+
+- Circle Effect
+[How-to] Circle fade out/in screen effect - smbmaster99
+    http://gmc.yoyogames.com/index.php?showtopic=670272
     
 */

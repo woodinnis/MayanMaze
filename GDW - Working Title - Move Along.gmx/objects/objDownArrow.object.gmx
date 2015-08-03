@@ -3,7 +3,7 @@
   <spriteName>sprDownArrow</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10000</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>objArrowParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
