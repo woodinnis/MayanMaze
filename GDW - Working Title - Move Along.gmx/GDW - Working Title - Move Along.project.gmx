@@ -84,6 +84,9 @@
     <background>background\bgMainMenu</background>
     <background>background\bgGame</background>
     <background>background\bgLvlSelect</background>
+    <background>background\bgMoss1</background>
+    <background>background\bgMoss2</background>
+    <background>background\bgMoss3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -97,6 +100,7 @@
       <script>scripts\scrOverlordGUI.gml</script>
       <script>scripts\scrDrawTransition.gml</script>
       <script>scripts\scrOverlordRoomEnd.gml</script>
+      <script>scripts\scrMoss.gml</script>
     </scripts>
     <scripts name="Tutorial">
       <script>scripts\scrTutorialDraw.gml</script>
@@ -298,7 +302,8 @@
       <room>rooms\room_Pause</room>
     </rooms>
   </rooms>
-  <constants number="4">
+  <constants number="5">
+    <constant name="MOSSCOUNT">20</constant>
     <constant name="LEVEL001TUT">"Move the arrow#to create a path to the exit"</constant>
     <constant name="LEVEL002TUT">"Use several arrows#to get around walls"</constant>
     <constant name="LEVEL003TUT">"Avoid obstacles,#like holes"</constant>
