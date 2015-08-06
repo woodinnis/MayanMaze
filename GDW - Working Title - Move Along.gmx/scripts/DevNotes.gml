@@ -704,3 +704,10 @@ Added a circle/iris fade-in/out at the beginning and end of levels.
 Created moss tiles which randomly distribute around the room at the beginning of the level
 - scrMoss is attached to Overlord Room Start event
 - Three different tiles have been created
+
+// 06, August, 2015 //
+
+Replaced several old and placeholder sprites
+- PauseBtn
+- ContinueBtn
+- FFBtn
