@@ -711,3 +711,7 @@ Replaced several old and placeholder sprites
 - PauseBtn
 - ContinueBtn
 - FFBtn
+
+Adjusted the circle fade
+- Zooms in to the door when level is over
+- Zooms out from the player when level begins
