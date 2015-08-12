@@ -715,3 +715,8 @@ Replaced several old and placeholder sprites
 Adjusted the circle fade
 - Zooms in to the door when level is over
 - Zooms out from the player when level begins
+
+// 08 August, 2015 //
+
+Corrected for text and image centering issue
+- Text and images now center based on window size

@@ -28,7 +28,7 @@ if((room != room_menuLarge) && (room != room_LvlSelect))
         draw_set_halign(fa_center);
         draw_set_valign(fa_top);
         // Draw background image
-        draw_sprite(sprMayaFace,0, view_wview[0]/2,view_hview[0]/3);
+        draw_sprite_ext(sprMayaFace,0, window_get_width()/2,window_get_height()/3,ROOMSCALE, ROOMSCALE,0,c_white,1);
     }
 }
 
@@ -37,5 +37,3 @@ msgPaneY = (room_height/3);
 
 msgX = (room_width/2);
 msgY = msgPaneY + 10
-
-
