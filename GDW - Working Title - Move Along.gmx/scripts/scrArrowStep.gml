@@ -22,14 +22,15 @@ if(mouse_check_button(mb_left) && drag)
 if(!drag)
 {
     if(place_empty(targetX, targetY))
-        {   
-            x = targetX;
-            y = targetY;
-                        
-            //drag = false;
-        } 
+    {   
+        x = targetX;
+        y = targetY;
+    } 
 }
 
+// Prevents players from placing arrows in the toolbar area of the screen
+if(y > 704)
+    y = 672;
 /*
 *   Obsolete as of 27 November, 2014
 *

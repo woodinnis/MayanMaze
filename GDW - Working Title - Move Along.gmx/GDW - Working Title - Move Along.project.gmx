@@ -24,11 +24,16 @@
   <sprites name="sprites">
     <sprites name="Menu">
       <sprites name="Level Select">
-        <sprite>sprites\sprLvlSelect01</sprite>
-        <sprite>sprites\sprLvlSelect02</sprite>
-        <sprite>sprites\sprLvlSelect03</sprite>
-        <sprite>sprites\sprLvlSelect04</sprite>
-        <sprite>sprites\sprLvlSelect05</sprite>
+        <sprite>sprites\sprLvlSelect001</sprite>
+        <sprite>sprites\sprLvlSelect002</sprite>
+        <sprite>sprites\sprLvlSelect003</sprite>
+        <sprite>sprites\sprLvlSelect004</sprite>
+        <sprite>sprites\sprLvlSelect005</sprite>
+        <sprite>sprites\sprLvlSelect006</sprite>
+        <sprite>sprites\sprLvlSelect007</sprite>
+        <sprite>sprites\sprLvlSelect008</sprite>
+        <sprite>sprites\sprLvlSelect009</sprite>
+        <sprite>sprites\sprLvlSelect010</sprite>
       </sprites>
       <sprite>sprites\sprQuitBtn</sprite>
       <sprite>sprites\sprContinueBtn</sprite>
@@ -87,6 +92,11 @@
     <background>background\bgMoss1</background>
     <background>background\bgMoss2</background>
     <background>background\bgMoss3</background>
+    <background>background\bgLvl006</background>
+    <background>background\bgLvl007</background>
+    <background>background\bgLvl008</background>
+    <background>background\bgLvl009</background>
+    <background>background\bgLvl010</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -234,11 +244,16 @@
     <objects name="Menu">
       <objects name="Level Select">
         <object>objects\objLvlSelectParent</object>
-        <object>objects\objLvlSelect01</object>
-        <object>objects\objLvlSelect02</object>
-        <object>objects\objLvlSelect03</object>
-        <object>objects\objLvlSelect04</object>
-        <object>objects\objLvlSelect05</object>
+        <object>objects\objLvlSelect001</object>
+        <object>objects\objLvlSelect002</object>
+        <object>objects\objLvlSelect003</object>
+        <object>objects\objLvlSelect004</object>
+        <object>objects\objLvlSelect005</object>
+        <object>objects\objLvlSelect006</object>
+        <object>objects\objLvlSelect007</object>
+        <object>objects\objLvlSelect008</object>
+        <object>objects\objLvlSelect009</object>
+        <object>objects\objLvlSelect010</object>
       </objects>
       <object>objects\objButtonParent</object>
       <object>objects\objLvlSelectBtn</object>
@@ -292,11 +307,16 @@
     <room>rooms\room_menuLarge</room>
     <room>rooms\room_LvlSelect</room>
     <rooms name="Maps">
-      <room>rooms\room_Maze01</room>
-      <room>rooms\room_Maze02</room>
-      <room>rooms\room_Maze03</room>
-      <room>rooms\room_Maze04</room>
-      <room>rooms\room_Maze05</room>
+      <room>rooms\room_Maze001</room>
+      <room>rooms\room_Maze002</room>
+      <room>rooms\room_Maze003</room>
+      <room>rooms\room_Maze004</room>
+      <room>rooms\room_Maze005</room>
+      <room>rooms\room_Maze006</room>
+      <room>rooms\room_Maze007</room>
+      <room>rooms\room_Maze008</room>
+      <room>rooms\room_Maze009</room>
+      <room>rooms\room_Maze010</room>
     </rooms>
     <rooms name="OBSOLETE">
       <room>rooms\room_Pause</room>

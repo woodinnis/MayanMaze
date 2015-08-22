@@ -22,24 +22,24 @@ if(tutorialStarted)
     
     switch(room)
     {
-        case room_Maze01:
+        case room_Maze001:
         {                          
             draw_text(msgX, msgY, LEVEL001TUT);
             break;
         }
 
-        case room_Maze02:
+        case room_Maze002:
         {
             draw_text(msgX, msgY, LEVEL002TUT);
             break;
         }
 
-        case room_Maze03:
+        case room_Maze003:
         {
             draw_text(msgX, msgY, LEVEL003TUT);
             break;
         }
-        case room_Maze04:
+        case room_Maze004:
         {
             draw_text(msgX, msgY, LEVEL004TUT);
             break;

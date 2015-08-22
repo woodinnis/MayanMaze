@@ -52,15 +52,15 @@ else if(room == room_LvlSelect)
     draw_set_colour(colourText);
     
     // Create level select buttons
-    instance_create(room_width/4 - lvlIconX, room_height/2, objLvlSelect01);
-    instance_create(room_width/2 - lvlIconX, room_height/2, objLvlSelect02);
-    instance_create(room_width/4 * 3 - lvlIconX, room_height/2, objLvlSelect03);
+//    instance_create(room_width/4 - lvlIconX, room_height/2, objLvlSelect01);
+//    instance_create(room_width/2 - lvlIconX, room_height/2, objLvlSelect02);
+//    instance_create(room_width/4 * 3 - lvlIconX, room_height/2, objLvlSelect03);
 
 
-    instance_create(room_width/4 - lvlIconX, room_height/2 + lvlIconX + 48, objLvlSelect04);
-    instance_create(room_width/2 - lvlIconX, room_height/2 + lvlIconX + 48, objLvlSelect05);
+//    instance_create(room_width/4 - lvlIconX, room_height/2 + lvlIconX + 48, objLvlSelect04);
+//    instance_create(room_width/2 - lvlIconX, room_height/2 + lvlIconX + 48, objLvlSelect05);
     
-    instance_create(room_width/2 - lvlIconX, room_height - lvlIconX * 3, objMenuBtn); 
+//    instance_create(room_width/2 - lvlIconX, room_height - lvlIconX * 3, objMenuBtn); 
        
     // If menu music is available to play, begin playing it
     if(sound_exists(sndBGMusicMenu))
