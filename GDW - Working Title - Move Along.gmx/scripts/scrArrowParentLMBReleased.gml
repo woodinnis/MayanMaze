@@ -1,5 +1,11 @@
 // Tile can no longer be moved
-if(mouse_y > 704)
+if(x < 32)
+    drag = false;
+if(y < 32)
+    drag = false;
+if(x > 512)
+    drag = false;
+if(y > 704)
     drag = false;
 else
     drag = false;

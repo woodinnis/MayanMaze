@@ -728,3 +728,5 @@ Five new levels added
 First five levels adjusted to allow for a "toolbar" area at bottom of screen
 
 Arrow tiles can no longer be dragged to beyond the bottom of the level
+
+Arrow tiles can no longer be dragged outside the play area

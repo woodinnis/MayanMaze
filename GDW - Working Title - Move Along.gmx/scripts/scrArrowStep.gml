@@ -28,7 +28,13 @@ if(!drag)
     } 
 }
 
-// Prevents players from placing arrows in the toolbar area of the screen
+// Prevents players from placing arrows outside the play area
+if(x < 32)
+    x = 32;
+if(y < 32)
+    y = 32;
+if(x > 512)
+    x = 480;
 if(y > 704)
     y = 672;
 /*
