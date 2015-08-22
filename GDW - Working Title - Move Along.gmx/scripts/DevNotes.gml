@@ -733,3 +733,8 @@ Arrow tiles can no longer be dragged outside the play area
 
 Coloured the toolbar area in all levels
 
+// 22 August, 2015 //
+
+Added automatic tiling to all levels at Room Start
+- scrTileBuilder
+- Tiles provide a sense of depth

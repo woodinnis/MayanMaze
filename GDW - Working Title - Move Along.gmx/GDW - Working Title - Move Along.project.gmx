@@ -101,6 +101,7 @@
       <background>background\bgLvl006</background>
     </backgrounds>
     <background>background\bgToolbar</background>
+    <background>background\bgBrickTile</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -115,6 +116,7 @@
       <script>scripts\scrDrawTransition.gml</script>
       <script>scripts\scrOverlordRoomEnd.gml</script>
       <script>scripts\scrMoss.gml</script>
+      <script>scripts\scrTileBuilder.gml</script>
     </scripts>
     <scripts name="Tutorial">
       <script>scripts\scrTutorialDraw.gml</script>
