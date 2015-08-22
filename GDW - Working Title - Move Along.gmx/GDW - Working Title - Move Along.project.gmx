@@ -88,15 +88,19 @@
     <background>background\bgMayaFace</background>
     <background>background\bgMainMenu</background>
     <background>background\bgGame</background>
+    <background>background\bgBar</background>
     <background>background\bgLvlSelect</background>
     <background>background\bgMoss1</background>
     <background>background\bgMoss2</background>
     <background>background\bgMoss3</background>
-    <background>background\bgLvl006</background>
-    <background>background\bgLvl007</background>
-    <background>background\bgLvl008</background>
-    <background>background\bgLvl009</background>
-    <background>background\bgLvl010</background>
+    <backgrounds name="Levels">
+      <background>background\bgLvl010</background>
+      <background>background\bgLvl008</background>
+      <background>background\bgLvl007</background>
+      <background>background\bgLvl009</background>
+      <background>background\bgLvl006</background>
+    </backgrounds>
+    <background>background\bgToolbar</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

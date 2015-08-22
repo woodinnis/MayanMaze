@@ -258,8 +258,43 @@
     <instance objName="objDownArrow" x="96" y="512" name="inst_2A7B0FA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRightArrow" x="256" y="608" name="inst_67800727" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLeftArrow" x="480" y="32" name="inst_7B043D26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="0" y="768" name="inst_19A18D8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="0" y="736" name="inst_94BB227A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="512" y="736" name="inst_B4F00987" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="512" y="768" name="inst_680EA06C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="bgBar" x="96" y="768" w="32" h="32" xo="0" yo="0" id="10000173" name="inst_E48262E1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="64" y="768" w="32" h="32" xo="0" yo="0" id="10000174" name="inst_F7D1D28E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="32" y="768" w="32" h="32" xo="0" yo="0" id="10000175" name="inst_A31CC01E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="32" y="736" w="32" h="32" xo="0" yo="0" id="10000176" name="inst_73D045C2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="64" y="736" w="32" h="32" xo="0" yo="0" id="10000177" name="inst_EE62F253" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="96" y="736" w="32" h="32" xo="0" yo="0" id="10000178" name="inst_97F13F64" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="128" y="736" w="32" h="32" xo="0" yo="0" id="10000179" name="inst_AF26761B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="160" y="736" w="32" h="32" xo="0" yo="0" id="10000180" name="inst_4C54EB7C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="192" y="736" w="32" h="32" xo="0" yo="0" id="10000181" name="inst_4F25D3DF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="224" y="736" w="32" h="32" xo="0" yo="0" id="10000182" name="inst_FCD93ECF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="256" y="736" w="32" h="32" xo="0" yo="0" id="10000183" name="inst_AC769F5E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="288" y="736" w="32" h="32" xo="0" yo="0" id="10000184" name="inst_7322221D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="320" y="736" w="32" h="32" xo="0" yo="0" id="10000185" name="inst_E18316FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="352" y="736" w="32" h="32" xo="0" yo="0" id="10000186" name="inst_E2205AD0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="384" y="736" w="32" h="32" xo="0" yo="0" id="10000187" name="inst_17842687" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="416" y="736" w="32" h="32" xo="0" yo="0" id="10000188" name="inst_E327A616" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="448" y="736" w="32" h="32" xo="0" yo="0" id="10000189" name="inst_FAED3F36" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="480" y="736" w="32" h="32" xo="0" yo="0" id="10000190" name="inst_20A59A50" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="480" y="768" w="32" h="32" xo="0" yo="0" id="10000191" name="inst_E248F4BF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="448" y="768" w="32" h="32" xo="0" yo="0" id="10000192" name="inst_54F0CEAD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="416" y="768" w="32" h="32" xo="0" yo="0" id="10000193" name="inst_B2C0A190" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="384" y="768" w="32" h="32" xo="0" yo="0" id="10000194" name="inst_FC621C19" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="352" y="768" w="32" h="32" xo="0" yo="0" id="10000195" name="inst_61C98F1B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="320" y="768" w="32" h="32" xo="0" yo="0" id="10000196" name="inst_59DD9102" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="288" y="768" w="32" h="32" xo="0" yo="0" id="10000197" name="inst_4E8F3DF5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="256" y="768" w="32" h="32" xo="0" yo="0" id="10000198" name="inst_DFAD96A6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="224" y="768" w="32" h="32" xo="0" yo="0" id="10000199" name="inst_7B14B3BC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="192" y="768" w="32" h="32" xo="0" yo="0" id="10000200" name="inst_7B528B0C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="160" y="768" w="32" h="32" xo="0" yo="0" id="10000201" name="inst_3A1E90A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBar" x="128" y="768" w="32" h="32" xo="0" yo="0" id="10000202" name="inst_B4E763F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
