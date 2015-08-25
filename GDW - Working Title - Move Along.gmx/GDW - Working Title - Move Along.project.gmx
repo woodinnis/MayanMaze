@@ -243,6 +243,7 @@
       <font>fonts\font_Fruktur</font>
     </fonts>
     <font>fonts\font_debug</font>
+    <font>fonts\fontSelkamUni</font>
   </fonts>
   <objects name="objects">
     <object>objects\objOverlord</object>
