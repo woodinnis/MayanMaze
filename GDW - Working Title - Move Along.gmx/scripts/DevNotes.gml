@@ -738,3 +738,12 @@ Coloured the toolbar area in all levels
 Added automatic tiling to all levels at Room Start
 - scrTileBuilder
 - Tiles provide a sense of depth
+
+// 09 September, 2015 //
+Happy Birthday Dreamcast!
+
+New Sprites
+- High saturation sprites added
+- Arrows, pause, FF btns
+- Wall tiles
+- Desaturated bgTile for contrast
