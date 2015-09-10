@@ -1,4 +1,4 @@
-if((room != room_menuLarge) && (room != room_LvlSelect))
+if((room != room_menuLarge) && (room != room_LvlSelect) && (room != roomEditor))
 {  
     HUDBottom = (room_height * 0.08);
  

@@ -2,6 +2,11 @@
 
 switch(object_index)
 {
+    case objLvlEditor:
+    {
+        room_goto(roomEditor);
+        break;
+    }
     case objLvlSelect001:
     {
         room_goto(room_Maze001);

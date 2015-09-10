@@ -1,20 +1,14 @@
-// Find x,y of closest Arrow tile
-dirX = instance_nearest(x, y, objArrowParent).x;
-dirY = instance_nearest(x, y, objArrowParent).y;
+// Verify player is in a playable room
+if(room != roomEditor)
+{
+    // Set speed and start walking
+    speed = playerSpeed;
 
-// Set player direction to closest 90-degree mulitple based on nearest Arrow 
-//ceil(point_direction(x, y, dirX, dirY)) div 90) * 90;
+    objOverlord.canWalk = true;
+    objOverlord.newStart = false;
+    // Play walking sound
+    audio_play_sound(sndPlayerWalk, 18, true);
 
-// Set player direction
-direction = 90;
-
-// Set speed and start walking
-speed = playerSpeed;
-objOverlord.canWalk = true;
-objOverlord.newStart = false;
-
-// Play walking sound
-audio_play_sound(sndPlayerWalk, 18, true);
-
-// Set animation speed
-image_speed = 0.07
+    // Set animation speed
+    image_speed = 0.07
+}

@@ -747,3 +747,10 @@ New Sprites
 - Arrows, pause, FF btns
 - Wall tiles
 - Desaturated bgTile for contrast
+
+// 10 Semtember, 2015 //
+
+Level editor in place
+- Several changes to major control scripts needed in order to incorporate
+- Most changes were condition checks, some removal of obsolete code
+- Next step is saving custom levels

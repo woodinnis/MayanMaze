@@ -24,6 +24,7 @@
   <sprites name="sprites">
     <sprites name="Menu">
       <sprites name="Level Select">
+        <sprite>sprites\sprLvlEditor</sprite>
         <sprite>sprites\sprLvlSelect001</sprite>
         <sprite>sprites\sprLvlSelect002</sprite>
         <sprite>sprites\sprLvlSelect003</sprite>
@@ -81,6 +82,7 @@
     <sprites name="Circle Effect">
       <sprite>sprites\spr_effect</sprite>
     </sprites>
+    <sprite>sprites\sprEraser</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMaze02</background>
@@ -231,6 +233,9 @@
       <script>scripts\scrCircleEffectRoomStart.gml</script>
       <script>scripts\scrCircleEffectDraw.gml</script>
     </scripts>
+    <scripts name="Editor">
+      <script>scripts\scrToolState.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_Fiesta</font>
@@ -251,6 +256,7 @@
     <objects name="Menu">
       <objects name="Level Select">
         <object>objects\objLvlSelectParent</object>
+        <object>objects\objLvlEditor</object>
         <object>objects\objLvlSelect001</object>
         <object>objects\objLvlSelect002</object>
         <object>objects\objLvlSelect003</object>
@@ -309,6 +315,18 @@
     <objects name="Circle Effect">
       <object>objects\obj_effect</object>
     </objects>
+    <objects name="Editor">
+      <object>objects\objWallTool</object>
+      <object>objects\objPlayerTool</object>
+      <object>objects\objDoorTool</object>
+      <object>objects\objArrowToolUp</object>
+      <object>objects\objArrowToolDn</object>
+      <object>objects\objArrowToolLt</object>
+      <object>objects\objArrowToolRt</object>
+      <object>objects\objTrapTool</object>
+      <object>objects\objEraserTool</object>
+      <object>objects\objEditor</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menuLarge</room>
@@ -328,8 +346,9 @@
     <rooms name="OBSOLETE">
       <room>rooms\room_Pause</room>
     </rooms>
+    <room>rooms\roomEditor</room>
   </rooms>
-  <constants number="9">
+  <constants number="22">
     <constant name="MOSSCOUNT">20</constant>
     <constant name="LEVEL001TUT">"Move the arrow#to create a path to the exit"</constant>
     <constant name="LEVEL002TUT">"Use several arrows#to get around walls"</constant>
@@ -339,6 +358,19 @@
     <constant name="ROOMHEIGHT">800</constant>
     <constant name="FACESCALEX">1</constant>
     <constant name="FACESCALEY">1</constant>
+    <constant name="EMPTY">0</constant>
+    <constant name="WALL">1</constant>
+    <constant name="PLAYER">2</constant>
+    <constant name="DOOR">3</constant>
+    <constant name="ARROWUP">4</constant>
+    <constant name="ARROWDN">5</constant>
+    <constant name="ARROWRT">6</constant>
+    <constant name="ARROWLT">7</constant>
+    <constant name="TRAP">8</constant>
+    <constant name="ERASER">9</constant>
+    <constant name="GRIDSIZE">32</constant>
+    <constant name="LEVELH">736</constant>
+    <constant name="LEVELW">512</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
