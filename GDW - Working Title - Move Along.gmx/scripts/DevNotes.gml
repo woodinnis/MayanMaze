@@ -754,3 +754,9 @@ Level editor in place
 - Several changes to major control scripts needed in order to incorporate
 - Most changes were condition checks, some removal of obsolete code
 - Next step is saving custom levels
+
+Progress on level editor implementation
+- New levels do not yet save after being created
+- Working on using .ini files to save level data, not functional yet
+- Entering the editor and returning to the main game causes the tutorial to crash
+- Haven't looked into this yet

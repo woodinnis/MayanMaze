@@ -3,6 +3,25 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles">
+    <datafile>
+      <name>maps.ini</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>maps.ini</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sndArrowClick</sound>
@@ -83,6 +102,7 @@
       <sprite>sprites\spr_effect</sprite>
     </sprites>
     <sprite>sprites\sprEraser</sprite>
+    <sprite>sprites\sprSave</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMaze02</background>
@@ -235,6 +255,8 @@
     </scripts>
     <scripts name="Editor">
       <script>scripts\scrToolState.gml</script>
+      <script>scripts\scrEditorCreate.gml</script>
+      <script>scripts\saveMap.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -326,6 +348,7 @@
       <object>objects\objTrapTool</object>
       <object>objects\objEraserTool</object>
       <object>objects\objEditor</object>
+      <object>objects\objSave</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -347,8 +370,9 @@
       <room>rooms\room_Pause</room>
     </rooms>
     <room>rooms\roomEditor</room>
+    <room>rooms\room_User000</room>
   </rooms>
-  <constants number="22">
+  <constants number="25">
     <constant name="MOSSCOUNT">20</constant>
     <constant name="LEVEL001TUT">"Move the arrow#to create a path to the exit"</constant>
     <constant name="LEVEL002TUT">"Use several arrows#to get around walls"</constant>
@@ -368,9 +392,12 @@
     <constant name="ARROWLT">7</constant>
     <constant name="TRAP">8</constant>
     <constant name="ERASER">9</constant>
+    <constant name="SAVE">10</constant>
     <constant name="GRIDSIZE">32</constant>
     <constant name="LEVELH">736</constant>
     <constant name="LEVELW">512</constant>
+    <constant name="USERROOM">"room_User"</constant>
+    <constant name="SAVEFILE">"maps.ini"</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

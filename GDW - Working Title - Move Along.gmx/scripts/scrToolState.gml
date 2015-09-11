@@ -5,8 +5,6 @@ align = GRIDSIZE;
 createX = (floor(device_mouse_x(0)/align)*align);
 createY = (floor(device_mouse_y(0)/align)*align);
 
-show_debug_message(currentTool);
-
 // Draw tiles
 //if(position_empty(createX,createY))
 if(createY < LEVELH)
@@ -17,7 +15,10 @@ if(createY < LEVELH)
         case WALL:
         {
             if(position_empty(createX,createY))
+            {
                 instance_create(createX, createY, wall);
+                room_instance_add(testMe, createX, createY, wall);
+            }
             break;
         }
         
@@ -138,6 +139,11 @@ if(createY < LEVELH)
             if(createX < LEVELW && createX > GRIDSIZE)
                 if(createY < LEVELH - GRIDSIZE && createY > GRIDSIZE)
                     position_destroy(createX,createY);
+            break;
+        }
+        case SAVE:
+        {
+            saveMap();
             break;
         }
         default:
