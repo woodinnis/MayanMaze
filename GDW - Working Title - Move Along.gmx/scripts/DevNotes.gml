@@ -760,3 +760,15 @@ Progress on level editor implementation
 - Working on using .ini files to save level data, not functional yet
 - Entering the editor and returning to the main game causes the tutorial to crash
 - Haven't looked into this yet
+
+// 14 September 2015 //
+
+Bug report
+- Received a bug report from IndieDB
+- FF button unable to find player instance
+- Added instance_exists() check to FFBtn LMB Event
+
+// 16 September 2015 //
+
+New Level Editor integrated
+- Scripts, Objects updated

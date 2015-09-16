@@ -256,7 +256,14 @@
     <scripts name="Editor">
       <script>scripts\scrToolState.gml</script>
       <script>scripts\scrEditorCreate.gml</script>
+      <script>scripts\saveMap_old.gml</script>
+      <script>scripts\clearLevel.gml</script>
+      <script>scripts\loadMap.gml</script>
+      <script>scripts\read.gml</script>
       <script>scripts\saveMap.gml</script>
+      <script>scripts\scrLevelSelect.gml</script>
+      <script>scripts\scrToolClicked.gml</script>
+      <script>scripts\write.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -370,7 +377,7 @@
       <room>rooms\room_Pause</room>
     </rooms>
     <room>rooms\roomEditor</room>
-    <room>rooms\room_User000</room>
+    <room>rooms\room_User</room>
   </rooms>
   <constants number="25">
     <constant name="MOSSCOUNT">20</constant>

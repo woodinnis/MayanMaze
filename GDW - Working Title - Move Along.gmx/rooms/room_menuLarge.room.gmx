@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="objOverlord" x="0" y="0" name="inst_44D04486" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objTutorial" x="64" y="64" name="inst_704AEAE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>// Increase player speed when the Fast Forward Button is pressed
-objPlayer.playerSpeed = 8;
+if(instance_exists(objPlayer))
+    objPlayer.playerSpeed = 8;
 </string>
           </argument>
         </arguments>

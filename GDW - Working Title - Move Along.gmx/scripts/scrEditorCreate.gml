@@ -1,11 +1,8 @@
 // Set global variables for the level editor
 globalvar currentTool;
+globalvar defaultRoom;
 currentTool = EMPTY;
-
-// Room Saving variables
-globalvar testMe;
-roomCount = 0;
-r = room_first;
+defaultRoom = USERROOM + "000";
 
 // Object variables
 wall = objWall;
@@ -17,7 +14,12 @@ left = objLeftArrow
 right = objRightArrow;
 trap = objHole;
 
-// Create an array containing all room names
+/* Room Saving variables
+globalvar testMe;
+roomCount = 0;
+r = room_first;
+
+/* Create an array containing all room names
 while(room_exists(r))
 {
     rooms[roomCount] = r;
@@ -83,8 +85,7 @@ for(i = 0; i < roomCount; i++)
                 }
                 break;
             }
-            */
+            /
         }
     }
 }
-

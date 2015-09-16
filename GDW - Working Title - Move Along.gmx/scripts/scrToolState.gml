@@ -17,7 +17,6 @@ if(createY < LEVELH)
             if(position_empty(createX,createY))
             {
                 instance_create(createX, createY, wall);
-                room_instance_add(testMe, createX, createY, wall);
             }
             break;
         }
@@ -136,14 +135,9 @@ if(createY < LEVELH)
         // Eraser tool
         case ERASER:
         {
-            if(createX < LEVELW && createX > GRIDSIZE)
-                if(createY < LEVELH - GRIDSIZE && createY > GRIDSIZE)
+            if(createX < LEVELW && createX >= GRIDSIZE)
+                if(createY < LEVELH - GRIDSIZE && createY >= GRIDSIZE)
                     position_destroy(createX,createY);
-            break;
-        }
-        case SAVE:
-        {
-            saveMap();
             break;
         }
         default:
