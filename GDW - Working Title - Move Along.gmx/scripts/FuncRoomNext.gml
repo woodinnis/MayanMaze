@@ -14,4 +14,3 @@ if(objOverlord.gameState == 2)
     }
     objOverlord.gameState = 0;
 }
-

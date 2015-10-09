@@ -747,3 +747,10 @@ New Sprites
 - Arrows, pause, FF btns
 - Wall tiles
 - Desaturated bgTile for contrast
+
+// 08 October, 2015 //
+Created new sprite-based font
+- Declared and set in OverlordGUI
+- Uses Ambages font
+- Two sets of sprites,fonts (lg & sm)
+- Numerals, Uppercase letters, and punctuation included

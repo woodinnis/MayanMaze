@@ -25,4 +25,3 @@ if(objOverlord.gameState == 2)
 // Destroy all buttons on screen
 with(objButtonParent)
     instance_destroy();
-

@@ -6,4 +6,3 @@ for (i=0; i < totalDoors; i++)
 {
     door[i] = instance_find(objDoor,i);
 }
-
