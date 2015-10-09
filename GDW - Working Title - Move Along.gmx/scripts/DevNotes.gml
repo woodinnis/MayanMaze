@@ -792,3 +792,9 @@ Created Button draw script
 - LevelSelectBtnDraw
 - Designed for dynamic level select buttons
 - Can easily be set up to take arguments
+
+Dynamic button spawning semi-functional
+- Buttons spawn in LvlSelect room
+- Display number is set at spawn time
+- Positioning still not fully functional
+- Buttons still cannot take input

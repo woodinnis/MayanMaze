@@ -142,6 +142,7 @@
       <script>scripts\scrOverlordRoomEnd.gml</script>
       <script>scripts\scrMoss.gml</script>
       <script>scripts\scrTileBuilder.gml</script>
+      <script>scripts\scrLevelSelectButtonSpawn.gml</script>
     </scripts>
     <scripts name="Tutorial">
       <script>scripts\scrTutorialDraw.gml</script>
@@ -386,7 +387,7 @@
     <room>rooms\roomEditor</room>
     <room>rooms\room_User</room>
   </rooms>
-  <constants number="25">
+  <constants number="26">
     <constant name="MOSSCOUNT">20</constant>
     <constant name="LEVEL001TUT">"Move the arrow#to create a path to the exit"</constant>
     <constant name="LEVEL002TUT">"Use several arrows#to get around walls"</constant>
@@ -412,6 +413,7 @@
     <constant name="LEVELW">512</constant>
     <constant name="USERROOM">"room_User"</constant>
     <constant name="SAVEFILE">"maps.ini"</constant>
+    <constant name="LEVELCOUNT">10</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
