@@ -772,3 +772,7 @@ Bug report
 
 New Level Editor integrated
 - Scripts, Objects updated
+
+// 08 October, 2015 //
+
+Main branch sprite font incorporated

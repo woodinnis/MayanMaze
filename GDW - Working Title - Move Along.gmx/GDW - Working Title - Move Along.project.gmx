@@ -71,6 +71,8 @@
     <sprites name="GUI">
       <sprite>sprites\sprPauseBtn</sprite>
       <sprite>sprites\sprFFBtn</sprite>
+      <sprite>sprites\sprFontLg</sprite>
+      <sprite>sprites\sprFontSm</sprite>
     </sprites>
     <sprites name="Arrows">
       <sprite>sprites\sprDownArrow</sprite>
