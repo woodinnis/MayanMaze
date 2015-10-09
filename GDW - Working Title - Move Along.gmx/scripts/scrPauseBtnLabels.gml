@@ -4,7 +4,7 @@ if(objOverlord.isPaused == true)
     
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_set_font(font_Fiesta);
+    draw_set_font(font_debug);
 
     // Create instance of a restart button
     draw_text_colour((room_width/4), room_height/2 + 150 + 32, "Restart", objOverlord.colourText, objOverlord.colourText, objOverlord.colourText2, objOverlord.colourText2, 1);

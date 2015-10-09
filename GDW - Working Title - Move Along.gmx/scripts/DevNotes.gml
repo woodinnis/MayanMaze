@@ -802,3 +802,8 @@ Dynamic button spawning semi-functional
 Dynamic buttons taking input
 - Room targets generated at LMBpressed
 - Target generation uses instance.roomNum
+
+General code cleanup
+- Multiple lines of obsolete comments removed
+- Deleted previous existing font files
+- font_debug kept for debug purposes
