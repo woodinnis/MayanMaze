@@ -776,3 +776,19 @@ New Level Editor integrated
 // 08 October, 2015 //
 
 Main branch sprite font incorporated
+
+// 09 October, 2015 //
+
+Moved Font creation to its own object
+- objFont in GUI folder
+- scrFontCreate in GUI folder
+
+Created dynamic button object
+- objButton
+- uses sprButton
+- currently uses objButtonParent
+
+Created Button draw script
+- LevelSelectBtnDraw
+- Designed for dynamic level select buttons
+- Can easily be set up to take arguments

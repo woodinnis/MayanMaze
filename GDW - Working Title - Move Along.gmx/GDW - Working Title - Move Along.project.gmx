@@ -54,6 +54,7 @@
         <sprite>sprites\sprLvlSelect008</sprite>
         <sprite>sprites\sprLvlSelect009</sprite>
         <sprite>sprites\sprLvlSelect010</sprite>
+        <sprite>sprites\sprButton</sprite>
       </sprites>
       <sprite>sprites\sprQuitBtn</sprite>
       <sprite>sprites\sprContinueBtn</sprite>
@@ -151,6 +152,7 @@
         <script>scripts\scrLvlSelectBtnCreate.gml</script>
         <script>scripts\scrLvlSelectBtnLMB.gml</script>
         <script>scripts\scrLvlSelectBtnAlarm0.gml</script>
+        <script>scripts\scrLevelSelectBtnDraw.gml</script>
       </scripts>
       <scripts name="QuitBtn">
         <script>scripts\scrQuitBtnCreate.gml</script>
@@ -183,6 +185,7 @@
       <script>scripts\scrLvlSelectParentLMB.gml</script>
       <script>scripts\scrLvlSelectParentCreate.gml</script>
       <script>scripts\scrLvlSelectParentAlarm0.gml</script>
+      <script>scripts\scrFontCreate.gml</script>
     </scripts>
     <scripts name="Player">
       <script>scripts\scrPlayerCreate.gml</script>
@@ -298,6 +301,7 @@
         <object>objects\objLvlSelect008</object>
         <object>objects\objLvlSelect009</object>
         <object>objects\objLvlSelect010</object>
+        <object>objects\objButton</object>
       </objects>
       <object>objects\objButtonParent</object>
       <object>objects\objLvlSelectBtn</object>
@@ -323,6 +327,7 @@
       <object>objects\objPlayer</object>
       <object>objects\objPauseBtn</object>
       <object>objects\objFFbtn</object>
+      <object>objects\objFont</object>
     </objects>
     <objects name="OBSOLETE">
       <objects name="Moving Tiles">

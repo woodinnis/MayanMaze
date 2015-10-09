@@ -1,7 +1,3 @@
-// Create new fonts using Ambages sprite sets
-FONTlg = font_add_sprite(sprFontLg, ord(" "), 1, 1);
-FONTsm = font_add_sprite(sprFontSm, ord(" "), 1, 1);
-
 if((room != room_menuLarge) && (room != room_LvlSelect) && (room != roomEditor))
 {  
     HUDBottom = (room_height * 0.08);
