@@ -154,6 +154,7 @@
         <script>scripts\scrLvlSelectBtnLMB.gml</script>
         <script>scripts\scrLvlSelectBtnAlarm0.gml</script>
         <script>scripts\scrLevelSelectBtnDraw.gml</script>
+        <script>scripts\scrLevelSelectBtnLMB.gml</script>
       </scripts>
       <scripts name="QuitBtn">
         <script>scripts\scrQuitBtnCreate.gml</script>

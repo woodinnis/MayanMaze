@@ -798,3 +798,7 @@ Dynamic button spawning semi-functional
 - Display number is set at spawn time
 - Positioning still not fully functional
 - Buttons still cannot take input
+
+Dynamic buttons taking input
+- Room targets generated at LMBpressed
+- Target generation uses instance.roomNum
