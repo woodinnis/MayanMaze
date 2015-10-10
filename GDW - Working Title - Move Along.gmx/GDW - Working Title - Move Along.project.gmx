@@ -143,6 +143,7 @@
       <script>scripts\scrMoss.gml</script>
       <script>scripts\scrTileBuilder.gml</script>
       <script>scripts\scrLevelSelectButtonSpawn.gml</script>
+      <script>scripts\scrUserLevelSelectButtonSpawn.gml</script>
     </scripts>
     <scripts name="Tutorial">
       <script>scripts\scrTutorialDraw.gml</script>
