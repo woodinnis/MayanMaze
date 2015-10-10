@@ -36,7 +36,3 @@ if(room == room_User)
     // Close file    
     ini_close();
 }
-
-/* Verify existance of roomTarget, move to room
-if(room_exists(asset_get_index(roomTarget)))
-    room_goto(asset_get_index(roomTarget));

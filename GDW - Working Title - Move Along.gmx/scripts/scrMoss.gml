@@ -1,5 +1,5 @@
 // Add random moss tiles to the floor of new rooms
-if(room != room_LvlSelect && room != room_menuLarge)
+if(room != room_menuLarge && room != room_LvlSelect && room != room_UserLvlSelect)
 {
     for(i = 0; i < MOSSCOUNT; i++)
     {

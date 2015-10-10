@@ -55,6 +55,7 @@
         <sprite>sprites\sprLvlSelect009</sprite>
         <sprite>sprites\sprLvlSelect010</sprite>
         <sprite>sprites\sprButton</sprite>
+        <sprite>sprites\sprTest</sprite>
       </sprites>
       <sprite>sprites\sprQuitBtn</sprite>
       <sprite>sprites\sprContinueBtn</sprite>
@@ -365,6 +366,8 @@
     <room>rooms\room_menuLarge</room>
     <room>rooms\room_LvlSelect</room>
     <room>rooms\room_UserLvlSelect</room>
+    <room>rooms\room_User</room>
+    <room>rooms\roomEditor</room>
     <rooms name="Maps">
       <room>rooms\room_Maze001</room>
       <room>rooms\room_Maze002</room>
@@ -380,8 +383,6 @@
     <rooms name="OBSOLETE">
       <room>rooms\room_Pause</room>
     </rooms>
-    <room>rooms\roomEditor</room>
-    <room>rooms\room_User</room>
   </rooms>
   <constants number="26">
     <constant name="MOSSCOUNT">20</constant>

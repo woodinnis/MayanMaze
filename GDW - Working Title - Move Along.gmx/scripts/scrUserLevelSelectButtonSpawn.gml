@@ -18,7 +18,7 @@ posY = display_get_height()/32;
 rowCount = 5;
 
 // Verify current room
-if(room == room_LvlSelect)
+if(room == room_UserLvlSelect)
 {
     file = SAVEFILE;
     roomName = "";
@@ -59,6 +59,5 @@ if(room == room_LvlSelect)
             w = 0;
             h++;
         }
-        show_debug_message(n);
     }
 }

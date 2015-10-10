@@ -90,7 +90,11 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>userRoom = roomNum;
+            <string>if(room = room_UserLvlSelect)
+{
+    userRoom = roomNum;
+    room_goto(room_User);
+}
 </string>
           </argument>
         </arguments>

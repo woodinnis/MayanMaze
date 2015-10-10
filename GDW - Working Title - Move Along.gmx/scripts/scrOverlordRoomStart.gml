@@ -62,9 +62,9 @@ else
     }
 }
 
-// Create Pause and Fast Forward Buttons
+// Create Pause and Fast Forward Buttons in appropriate rooms
 
-if(room != room_menuLarge && room != room_LvlSelect)
+if(room != room_menuLarge && room != room_LvlSelect && room != room_UserLvlSelect && room != roomEditor)
 {
     pauseBtnX = (room_width/3) - sprite_get_width(sprPauseBtn)/2;
     FFBtnX = (room_width/3) * 2 - sprite_get_width(sprFFBtn)/2;

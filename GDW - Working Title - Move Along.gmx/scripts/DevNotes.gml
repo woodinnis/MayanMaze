@@ -829,3 +829,8 @@ Created objRoomCreator, UserLevelLoader
 - Functions on RoomStart of room_User
 - Loads user levels
 
+Merged UserLevelLoader functions into LevelLoader functions
+- Created separate room for UserLevel loading
+- Rebuilt LevelLoader with new button spawn loop
+
+Removed Pause, FF, and Moss spawns from irrelevent rooms
