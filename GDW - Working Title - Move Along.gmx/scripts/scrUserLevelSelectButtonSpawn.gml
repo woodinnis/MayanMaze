@@ -20,8 +20,6 @@ rowCount = 5;
 // Verify current room
 if(room == room_LvlSelect)
 {
-
-
     file = SAVEFILE;
     roomName = "";
     if(file_exists(file))
@@ -43,11 +41,12 @@ if(room == room_LvlSelect)
         if(ini_section_exists(roomName))
             lvlCount++;
     }
-    ini_close();
+    ini_close();    // Close file
     
     n = 0;
     w = 0;
     h = 0;
+    // Create new level select buttons based
     while(n < lvlCount)
     {
         lvlButtons[lvlNum] = instance_create(posX + (imgW*w),posY + (imgH*h),objButton)
@@ -61,20 +60,5 @@ if(room == room_LvlSelect)
             h++;
         }
         show_debug_message(n);
-    }
-    
-}
-    /* Create the button
-    for(i = 0; i < lvlCount; i++)
-    {
-        n = 0;
-        while(n < rowCount)
-        {
-            lvlButtons[lvlNum] = instance_create(posX + (imgW*n),posY + (imgH*i),objButton)
-            lvlButtons[lvlNum].roomNum = lvlNum;
-            lvlNum++;
-            show_debug_message(n);
-            n++
-        }
     }
 }

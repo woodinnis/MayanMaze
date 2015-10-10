@@ -824,3 +824,8 @@ Created UserLevelSelectButtonSpawn
 Rebuilt button spawn loop
 - Replaced for loop with while loop
 - Spawns the correct number of buttons for available levels
+
+Created objRoomCreator, UserLevelLoader
+- Functions on RoomStart of room_User
+- Loads user levels
+
