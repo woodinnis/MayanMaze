@@ -807,3 +807,7 @@ General code cleanup
 - Multiple lines of obsolete comments removed
 - Deleted previous existing font files
 - font_debug kept for debug purposes
+
+// 10 October, 2015 //
+Removed LevelButtonSpawn from Overlord
+- Separate testing to follow

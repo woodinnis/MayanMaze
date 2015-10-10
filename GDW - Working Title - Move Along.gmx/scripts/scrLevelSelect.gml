@@ -11,7 +11,7 @@ if(file_exists(file))
 for(j = 0; j < 1000; j++)
 {
     if(j < 1)
-        roomName = defaultRoom;
+        roomName = USERROOM + defaultRoom;
     else if(j < 10)
         roomName = USERROOM + "00"+ string(j);
     else if(j < 100)
