@@ -143,6 +143,7 @@
       <script>scripts\scrMoss.gml</script>
       <script>scripts\scrTileBuilder.gml</script>
       <script>scripts\scrLevelSelectButtonSpawn.gml</script>
+      <script>scripts\scrUserLevelSelectButtonSpawn.gml</script>
     </scripts>
     <scripts name="Tutorial">
       <script>scripts\scrTutorialDraw.gml</script>
@@ -155,6 +156,7 @@
         <script>scripts\scrLvlSelectBtnAlarm0.gml</script>
         <script>scripts\scrLevelSelectBtnDraw.gml</script>
         <script>scripts\scrLevelSelectBtnLMB.gml</script>
+        <script>scripts\scrUserLevelLoader.gml</script>
       </scripts>
       <scripts name="QuitBtn">
         <script>scripts\scrQuitBtnCreate.gml</script>
@@ -294,6 +296,7 @@
         <object>objects\objLvlSelect009</object>
         <object>objects\objLvlSelect010</object>
         <object>objects\objButton</object>
+        <object>objects\objTest</object>
       </objects>
       <object>objects\objButtonParent</object>
       <object>objects\objLvlSelectBtn</object>
@@ -356,10 +359,12 @@
       <object>objects\objEditor</object>
       <object>objects\objSave</object>
     </objects>
+    <object>objects\objRoomCreator</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menuLarge</room>
     <room>rooms\room_LvlSelect</room>
+    <room>rooms\room_UserLvlSelect</room>
     <rooms name="Maps">
       <room>rooms\room_Maze001</room>
       <room>rooms\room_Maze002</room>

@@ -811,3 +811,21 @@ General code cleanup
 // 10 October, 2015 //
 Removed LevelButtonSpawn from Overlord
 - Separate testing to follow
+
+Created new working branch UserLevelButtons
+- Returned LevelButtonSpawn to Overlord
+- Beginning testing for buttons spawned from user-built levels
+
+Created UserLevelSelectButtonSpawn
+- Based on LevelSelectButtonSpawn
+- Counts entries in maps.ini
+- Spawns n buttons based on valid entries
+
+Rebuilt button spawn loop
+- Replaced for loop with while loop
+- Spawns the correct number of buttons for available levels
+
+Created objRoomCreator, UserLevelLoader
+- Functions on RoomStart of room_User
+- Loads user levels
+
