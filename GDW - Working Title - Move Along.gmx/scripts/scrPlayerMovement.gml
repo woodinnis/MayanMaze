@@ -112,4 +112,3 @@ if(room != roomEditor)
             }
         }
     }
-}// room check

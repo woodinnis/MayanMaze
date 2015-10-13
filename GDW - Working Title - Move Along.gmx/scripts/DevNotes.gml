@@ -748,6 +748,7 @@ New Sprites
 - Wall tiles
 - Desaturated bgTile for contrast
 
+
 // 10 Semtember, 2015 //
 
 Level editor in place
@@ -834,3 +835,11 @@ Merged UserLevelLoader functions into LevelLoader functions
 - Rebuilt LevelLoader with new button spawn loop
 
 Removed Pause, FF, and Moss spawns from irrelevent rooms
+
+// 08 October, 2015 //
+Created new sprite-based font
+- Declared and set in OverlordGUI
+- Uses Ambages font
+- Two sets of sprites,fonts (lg & sm)
+- Numerals, Uppercase letters, and punctuation included
+
