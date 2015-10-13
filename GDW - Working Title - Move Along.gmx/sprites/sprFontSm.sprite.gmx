@@ -8,7 +8,7 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>30</bbox_right>
+  <bbox_right>31</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>31</bbox_bottom>
   <HTile>0</HTile>
@@ -79,5 +79,6 @@
     <frame index="56">images\sprFontSm_56.png</frame>
     <frame index="57">images\sprFontSm_57.png</frame>
     <frame index="58">images\sprFontSm_58.png</frame>
+    <frame index="59">images\sprFontSm_59.png</frame>
   </frames>
 </sprite>

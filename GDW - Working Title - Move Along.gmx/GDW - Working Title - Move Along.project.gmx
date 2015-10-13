@@ -3,7 +3,25 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles"/>
+  <datafiles number="1" name="datafiles">
+    <datafile>
+      <name>maps.ini</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>maps.ini</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sndArrowClick</sound>
@@ -25,6 +43,7 @@
   <sprites name="sprites">
     <sprites name="Menu">
       <sprites name="Level Select">
+        <sprite>sprites\sprLvlEditor</sprite>
         <sprite>sprites\sprLvlSelect001</sprite>
         <sprite>sprites\sprLvlSelect002</sprite>
         <sprite>sprites\sprLvlSelect003</sprite>
@@ -35,6 +54,8 @@
         <sprite>sprites\sprLvlSelect008</sprite>
         <sprite>sprites\sprLvlSelect009</sprite>
         <sprite>sprites\sprLvlSelect010</sprite>
+        <sprite>sprites\sprButton</sprite>
+        <sprite>sprites\sprTest</sprite>
       </sprites>
       <sprite>sprites\sprQuitBtn</sprite>
       <sprite>sprites\sprContinueBtn</sprite>
@@ -84,6 +105,8 @@
     <sprites name="Circle Effect">
       <sprite>sprites\spr_effect</sprite>
     </sprites>
+    <sprite>sprites\sprEraser</sprite>
+    <sprite>sprites\sprSave</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgMaze02</background>
@@ -120,6 +143,8 @@
       <script>scripts\scrOverlordRoomEnd.gml</script>
       <script>scripts\scrMoss.gml</script>
       <script>scripts\scrTileBuilder.gml</script>
+      <script>scripts\scrLevelSelectButtonSpawn.gml</script>
+      <script>scripts\scrUserLevelSelectButtonSpawn.gml</script>
     </scripts>
     <scripts name="Tutorial">
       <script>scripts\scrTutorialDraw.gml</script>
@@ -130,6 +155,9 @@
         <script>scripts\scrLvlSelectBtnCreate.gml</script>
         <script>scripts\scrLvlSelectBtnLMB.gml</script>
         <script>scripts\scrLvlSelectBtnAlarm0.gml</script>
+        <script>scripts\scrLevelSelectBtnDraw.gml</script>
+        <script>scripts\scrLevelSelectBtnLMB.gml</script>
+        <script>scripts\scrUserLevelLoader.gml</script>
       </scripts>
       <scripts name="QuitBtn">
         <script>scripts\scrQuitBtnCreate.gml</script>
@@ -162,6 +190,7 @@
       <script>scripts\scrLvlSelectParentLMB.gml</script>
       <script>scripts\scrLvlSelectParentCreate.gml</script>
       <script>scripts\scrLvlSelectParentAlarm0.gml</script>
+      <script>scripts\scrFontCreate.gml</script>
     </scripts>
     <scripts name="Player">
       <script>scripts\scrPlayerCreate.gml</script>
@@ -234,6 +263,18 @@
       <script>scripts\scrCircleEffectRoomStart.gml</script>
       <script>scripts\scrCircleEffectDraw.gml</script>
     </scripts>
+    <scripts name="Editor">
+      <script>scripts\scrToolState.gml</script>
+      <script>scripts\scrEditorCreate.gml</script>
+      <script>scripts\saveMap_old.gml</script>
+      <script>scripts\clearLevel.gml</script>
+      <script>scripts\loadMap.gml</script>
+      <script>scripts\read.gml</script>
+      <script>scripts\saveMap.gml</script>
+      <script>scripts\scrLevelSelect.gml</script>
+      <script>scripts\scrToolClicked.gml</script>
+      <script>scripts\write.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_debug</font>
@@ -244,6 +285,7 @@
     <objects name="Menu">
       <objects name="Level Select">
         <object>objects\objLvlSelectParent</object>
+        <object>objects\objLvlEditor</object>
         <object>objects\objLvlSelect001</object>
         <object>objects\objLvlSelect002</object>
         <object>objects\objLvlSelect003</object>
@@ -254,6 +296,8 @@
         <object>objects\objLvlSelect008</object>
         <object>objects\objLvlSelect009</object>
         <object>objects\objLvlSelect010</object>
+        <object>objects\objButton</object>
+        <object>objects\objTest</object>
       </objects>
       <object>objects\objButtonParent</object>
       <object>objects\objLvlSelectBtn</object>
@@ -279,6 +323,7 @@
       <object>objects\objPlayer</object>
       <object>objects\objPauseBtn</object>
       <object>objects\objFFbtn</object>
+      <object>objects\objFont</object>
     </objects>
     <objects name="OBSOLETE">
       <objects name="Moving Tiles">
@@ -302,10 +347,27 @@
     <objects name="Circle Effect">
       <object>objects\obj_effect</object>
     </objects>
+    <objects name="Editor">
+      <object>objects\objWallTool</object>
+      <object>objects\objPlayerTool</object>
+      <object>objects\objDoorTool</object>
+      <object>objects\objArrowToolUp</object>
+      <object>objects\objArrowToolDn</object>
+      <object>objects\objArrowToolLt</object>
+      <object>objects\objArrowToolRt</object>
+      <object>objects\objTrapTool</object>
+      <object>objects\objEraserTool</object>
+      <object>objects\objEditor</object>
+      <object>objects\objSave</object>
+    </objects>
+    <object>objects\objRoomCreator</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menuLarge</room>
     <room>rooms\room_LvlSelect</room>
+    <room>rooms\room_UserLvlSelect</room>
+    <room>rooms\room_User</room>
+    <room>rooms\roomEditor</room>
     <rooms name="Maps">
       <room>rooms\room_Maze001</room>
       <room>rooms\room_Maze002</room>
@@ -322,7 +384,7 @@
       <room>rooms\room_Pause</room>
     </rooms>
   </rooms>
-  <constants number="9">
+  <constants number="26">
     <constant name="MOSSCOUNT">20</constant>
     <constant name="LEVEL001TUT">"Move the arrow#to create a path to the exit"</constant>
     <constant name="LEVEL002TUT">"Use several arrows#to get around walls"</constant>
@@ -332,6 +394,23 @@
     <constant name="ROOMHEIGHT">800</constant>
     <constant name="FACESCALEX">1</constant>
     <constant name="FACESCALEY">1</constant>
+    <constant name="EMPTY">0</constant>
+    <constant name="WALL">1</constant>
+    <constant name="PLAYER">2</constant>
+    <constant name="DOOR">3</constant>
+    <constant name="ARROWUP">4</constant>
+    <constant name="ARROWDN">5</constant>
+    <constant name="ARROWRT">6</constant>
+    <constant name="ARROWLT">7</constant>
+    <constant name="TRAP">8</constant>
+    <constant name="ERASER">9</constant>
+    <constant name="SAVE">10</constant>
+    <constant name="GRIDSIZE">32</constant>
+    <constant name="LEVELH">736</constant>
+    <constant name="LEVELW">512</constant>
+    <constant name="USERROOM">"room_User"</constant>
+    <constant name="SAVEFILE">"maps.ini"</constant>
+    <constant name="LEVELCOUNT">10</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

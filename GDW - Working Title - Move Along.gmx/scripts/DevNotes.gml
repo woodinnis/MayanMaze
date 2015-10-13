@@ -748,9 +748,98 @@ New Sprites
 - Wall tiles
 - Desaturated bgTile for contrast
 
+
+// 10 Semtember, 2015 //
+
+Level editor in place
+- Several changes to major control scripts needed in order to incorporate
+- Most changes were condition checks, some removal of obsolete code
+- Next step is saving custom levels
+
+Progress on level editor implementation
+- New levels do not yet save after being created
+- Working on using .ini files to save level data, not functional yet
+- Entering the editor and returning to the main game causes the tutorial to crash
+- Haven't looked into this yet
+
+// 14 September 2015 //
+
+Bug report
+- Received a bug report from IndieDB
+- FF button unable to find player instance
+- Added instance_exists() check to FFBtn LMB Event
+
+// 16 September 2015 //
+
+New Level Editor integrated
+- Scripts, Objects updated
+
+// 08 October, 2015 //
+
+Main branch sprite font incorporated
+
+// 09 October, 2015 //
+
+Moved Font creation to its own object
+- objFont in GUI folder
+- scrFontCreate in GUI folder
+
+Created dynamic button object
+- objButton
+- uses sprButton
+- currently uses objButtonParent
+
+Created Button draw script
+- LevelSelectBtnDraw
+- Designed for dynamic level select buttons
+- Can easily be set up to take arguments
+
+Dynamic button spawning semi-functional
+- Buttons spawn in LvlSelect room
+- Display number is set at spawn time
+- Positioning still not fully functional
+- Buttons still cannot take input
+
+Dynamic buttons taking input
+- Room targets generated at LMBpressed
+- Target generation uses instance.roomNum
+
+General code cleanup
+- Multiple lines of obsolete comments removed
+- Deleted previous existing font files
+- font_debug kept for debug purposes
+
+// 10 October, 2015 //
+Removed LevelButtonSpawn from Overlord
+- Separate testing to follow
+
+Created new working branch UserLevelButtons
+- Returned LevelButtonSpawn to Overlord
+- Beginning testing for buttons spawned from user-built levels
+
+Created UserLevelSelectButtonSpawn
+- Based on LevelSelectButtonSpawn
+- Counts entries in maps.ini
+- Spawns n buttons based on valid entries
+
+Rebuilt button spawn loop
+- Replaced for loop with while loop
+- Spawns the correct number of buttons for available levels
+
+Created objRoomCreator, UserLevelLoader
+- Functions on RoomStart of room_User
+- Loads user levels
+
+Merged UserLevelLoader functions into LevelLoader functions
+- Created separate room for UserLevel loading
+- Rebuilt LevelLoader with new button spawn loop
+
+Removed Pause, FF, and Moss spawns from irrelevent rooms
+
 // 08 October, 2015 //
 Created new sprite-based font
 - Declared and set in OverlordGUI
 - Uses Ambages font
 - Two sets of sprites,fonts (lg & sm)
 - Numerals, Uppercase letters, and punctuation included
+

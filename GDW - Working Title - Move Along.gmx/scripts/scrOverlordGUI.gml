@@ -1,21 +1,22 @@
+
+if((room != room_menuLarge) && (room != room_LvlSelect) && (room != roomEditor))
+{  
+    HUDBottom = (room_height * 0.08);
+    draw_set_font(FONTsm);
+
 // Create new fonts using Ambages sprite sets
 FONTlg = font_add_sprite(sprFontLg, ord(" "), 1, 1);
 FONTsm = font_add_sprite(sprFontSm, ord(" "), 1, 1);
-
-if((room != room_menuLarge) && (room != room_LvlSelect))
-{  
-    HUDBottom = (room_height * 0.08);
-
-    draw_set_font(FONTsm); 
 
     // Draw a countdown timer for the player to start walking
     if(canWalk == false && newStart == true && isPaused == false)
     {   
         draw_set_halign(fa_center);
         draw_set_valign(fa_top);
-        
+
         // Draw countdown
-        draw_text_colour(room_width/2, (room_height/4) * 3, "START IN " + string(ceil(objPlayer.alarm[0]/room_speed)),c_white,c_white,c_white,c_white, 1);
+//        draw_text_colour(room_width/2, (room_height/4) * 3, "START IN " + string(ceil(objPlayer.alarm[0]/room_speed)),c_white,c_white,c_white,c_white, 1);
+
     }
 
     

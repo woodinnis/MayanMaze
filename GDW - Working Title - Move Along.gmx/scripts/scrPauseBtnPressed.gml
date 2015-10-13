@@ -4,10 +4,6 @@ if(objOverlord.isPaused == false)
 {
     instance_deactivate_object(objPlayer)
     
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_set_font(font_Fiesta);
-
     // Create instance of a restart button
     restartBtn = instance_create((room_width/4) - sprite_get_width(sprMenu)/2, room_height/2 + 150, objRestartBtn);
     

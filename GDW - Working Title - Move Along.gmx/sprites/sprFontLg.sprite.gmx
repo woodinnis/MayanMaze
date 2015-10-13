@@ -8,9 +8,9 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>123</bbox_right>
-  <bbox_top>2</bbox_top>
-  <bbox_bottom>125</bbox_bottom>
+  <bbox_right>127</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>127</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -79,5 +79,6 @@
     <frame index="56">images\sprFontLg_56.png</frame>
     <frame index="57">images\sprFontLg_57.png</frame>
     <frame index="58">images\sprFontLg_58.png</frame>
+    <frame index="59">images\sprFontLg_59.png</frame>
   </frames>
 </sprite>

@@ -2,33 +2,36 @@
 // 0 = Intro
 // 1 = Playing
 // 2 = Outro
-switch(gameState)
+if(room != roomEditor && room != room_menuLarge && room != room_LvlSelect)
 {
-    case 0:
+    switch(gameState)
     {
-        if(guiAlpha > 0)
+        case 0:
         {
-            guiAlpha -= 0.025;
+            if(guiAlpha > 0)
+            {
+                guiAlpha -= 0.025;
+            }
+            else
+            {
+                gameState = 1;
+            }
+                    
+            break;
         }
-        else
+        case 1:
+        {        
+            // Keep track of total tiles used this level
+            totalTiles = tilesUsed;
+            
+            thisRoom = string(room_previous(room));
+            break;
+        }
+        case 2:
         {
-            gameState = 1;
+            // Some sort of transition is needed here.
+            // It needs to come after the Continue button is pressed on the pause menu
+            break;
         }
-                
-        break;
-    }
-    case 1:
-    {        
-        // Keep track of total tiles used this level
-        totalTiles = tilesUsed;
-        
-        thisRoom = string(room_previous(room));
-        break;
-    }
-    case 2:
-    {
-        // Some sort of transition is needed here.
-        // It needs to come after the Continue button is pressed on the pause menu
-        break;
     }
 }

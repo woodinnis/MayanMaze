@@ -1,9 +1,7 @@
 // Events to perform at the beginning of rooms
 
-
 // Clear tiles used at the beginning of each room
 tilesUsed = 0;
-
 
 // Check current room
 if(room == room_menuLarge)
@@ -39,29 +37,7 @@ if(room == room_menuLarge)
     }
 }
 else if(room == room_LvlSelect)
-{
-    // Set coordinates of buttons
-    lvlIconX = sprite_get_width(sprMenu)/2;
-    
-    // Align text
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    
-    // Set font and draw title
-    draw_set_font(font_Fiesta_med);
-    draw_set_colour(colourText);
-    
-    // Create level select buttons
-//    instance_create(room_width/4 - lvlIconX, room_height/2, objLvlSelect01);
-//    instance_create(room_width/2 - lvlIconX, room_height/2, objLvlSelect02);
-//    instance_create(room_width/4 * 3 - lvlIconX, room_height/2, objLvlSelect03);
-
-
-//    instance_create(room_width/4 - lvlIconX, room_height/2 + lvlIconX + 48, objLvlSelect04);
-//    instance_create(room_width/2 - lvlIconX, room_height/2 + lvlIconX + 48, objLvlSelect05);
-    
-//    instance_create(room_width/2 - lvlIconX, room_height - lvlIconX * 3, objMenuBtn); 
-       
+{    
     // If menu music is available to play, begin playing it
     if(sound_exists(sndBGMusicMenu))
     {
@@ -77,7 +53,6 @@ else
     if(audio_is_playing(sndBGMusicMenu))
     {
         audio_stop_sound(sndBGMusicMenu);
-//        alarm[0] = room_speed * .25;
     }
     
     // If game music is available to play, begin playing it
@@ -87,9 +62,9 @@ else
     }
 }
 
-// Create Pause and Fast Forward Buttons
+// Create Pause and Fast Forward Buttons in appropriate rooms
 
-if(room != room_menuLarge && room != room_LvlSelect)
+if(room != room_menuLarge && room != room_LvlSelect && room != room_UserLvlSelect && room != roomEditor)
 {
     pauseBtnX = (room_width/3) - sprite_get_width(sprPauseBtn)/2;
     FFBtnX = (room_width/3) * 2 - sprite_get_width(sprFFBtn)/2;

@@ -41,3 +41,7 @@ newStart = true;
 guiAlpha = 0;
 
 thisRoom = string(room);
+
+// Set current User Level being loaded
+globalvar userRoom;
+userRoom = 0;
