@@ -15,7 +15,7 @@ FONTsm = font_add_sprite(sprFontSm, ord(" "), 1, 1);
         draw_set_valign(fa_top);
 
         // Draw countdown
-//        draw_text_colour(room_width/2, (room_height/4) * 3, "START IN " + string(ceil(objPlayer.alarm[0]/room_speed)),c_white,c_white,c_white,c_white, 1);
+        draw_text_colour(room_width/2, (room_height/4) * 3, "START IN " + string(ceil(objPlayer.alarm[0]/room_speed)),c_white,c_white,c_white,c_white, 1);
 
     }
 

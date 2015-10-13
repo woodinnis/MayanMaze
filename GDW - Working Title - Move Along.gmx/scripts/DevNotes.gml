@@ -775,6 +775,13 @@ New Level Editor integrated
 - Scripts, Objects updated
 
 // 08 October, 2015 //
+Created new sprite-based font
+- Declared and set in OverlordGUI
+- Uses Ambages font
+- Two sets of sprites,fonts (lg & sm)
+- Numerals, Uppercase letters, and punctuation included
+
+// 08 October, 2015 //
 
 Main branch sprite font incorporated
 
@@ -836,10 +843,7 @@ Merged UserLevelLoader functions into LevelLoader functions
 
 Removed Pause, FF, and Moss spawns from irrelevent rooms
 
-// 08 October, 2015 //
-Created new sprite-based font
-- Declared and set in OverlordGUI
-- Uses Ambages font
-- Two sets of sprites,fonts (lg & sm)
-- Numerals, Uppercase letters, and punctuation included
+// 13 October, 2015 //
 
+Merged LevelEditor branch into master
+- Fixed minor post-merge errors
