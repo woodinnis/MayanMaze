@@ -56,10 +56,18 @@ trap = objHole;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Save map
-saveMap();
-// Leave room
-room_goto(room_LvlSelect);
+            <string>// Ask player if they want to save their level
+save = show_question_async("Save This Level?");
+
+// Save map
+if(save)
+{
+    saveMap();
+    room_goto(room_LvlSelect);
+}
+else
+    room_goto(room_LvlSelect);
+
 </string>
           </argument>
         </arguments>

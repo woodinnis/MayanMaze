@@ -853,3 +853,9 @@ Merged LevelEditor branch into master
 Dynamic Level Select buttons implemented
 - Both Level Select menus now dynamically load numbered buttons 
     according to the number of levels currently available.
+    
+Back button functional
+- Back button allows players to return to previous room
+
+Save prompt
+- Save button now asks players if they want to save their levels
