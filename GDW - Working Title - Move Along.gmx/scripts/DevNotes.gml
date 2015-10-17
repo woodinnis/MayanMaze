@@ -847,3 +847,9 @@ Removed Pause, FF, and Moss spawns from irrelevent rooms
 
 Merged LevelEditor branch into master
 - Fixed minor post-merge errors
+
+// 17 October, 2015 //
+
+Dynamic Level Select buttons implemented
+- Both Level Select menus now dynamically load numbered buttons 
+    according to the number of levels currently available.

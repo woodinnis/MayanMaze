@@ -11,9 +11,9 @@ lvlCount = LEVELCOUNT;
 // Positions
 imgW = sprite_get_width(sprButton);
 imgH = sprite_get_height(sprButton);
-posX = display_get_width()/16;
-posY = display_get_height()/32;
-rowCount = 5;
+posX = display_get_width()/BTNSPAWNX;
+posY = display_get_height()/BTNSPAWNY;
+rowCount = 4;
 
 // Verify current room
 if(room == room_LvlSelect)
@@ -26,12 +26,14 @@ if(room == room_LvlSelect)
     {
         
         lvlButtons[lvlNum] = instance_create(posX + (imgW*w),posY + (imgH*h),objButton)
+        posX += BTNSPAWNX;
         lvlButtons[lvlNum].roomNum = lvlNum;
         lvlNum++;
         n++
         w++
         if(w > rowCount)
         {
+            posX = display_get_width()/BTNSPAWNX;
             w = 0;
             h++;
         } 
