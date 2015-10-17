@@ -2,7 +2,7 @@
 // 0 = Intro
 // 1 = Playing
 // 2 = Outro
-if(room != roomEditor && room != room_menuLarge && room != room_LvlSelect)
+if((room != roomEditor) && (room != room_menuLarge) && (room != room_LvlSelect) && (room != room_UserLvlSelect))
 {
     switch(gameState)
     {

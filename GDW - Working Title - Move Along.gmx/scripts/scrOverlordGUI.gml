@@ -1,5 +1,5 @@
 
-if((room != room_menuLarge) && (room != room_LvlSelect) && (room != roomEditor))
+if((room != room_menuLarge) && (room != room_LvlSelect) && (room != room_UserLvlSelect) && (room != roomEditor))
 {  
     HUDBottom = (room_height * 0.08);
     draw_set_font(FONTsm);
