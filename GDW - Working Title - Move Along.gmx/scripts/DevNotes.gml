@@ -859,3 +859,6 @@ Back button functional
 
 Save prompt
 - Save button now asks players if they want to save their levels
+
+Restart User levels
+- User levels now restart correctly, loading all assets
