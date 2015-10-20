@@ -214,16 +214,6 @@
       <objects name="Level Select">
         <object>objects\objLvlSelectParent</object>
         <object>objects\objLvlEditor</object>
-        <object>objects\objLvlSelect001</object>
-        <object>objects\objLvlSelect002</object>
-        <object>objects\objLvlSelect003</object>
-        <object>objects\objLvlSelect004</object>
-        <object>objects\objLvlSelect005</object>
-        <object>objects\objLvlSelect006</object>
-        <object>objects\objLvlSelect007</object>
-        <object>objects\objLvlSelect008</object>
-        <object>objects\objLvlSelect009</object>
-        <object>objects\objLvlSelect010</object>
         <object>objects\objButton</object>
         <object>objects\objTest</object>
       </objects>
