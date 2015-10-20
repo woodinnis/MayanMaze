@@ -30,7 +30,22 @@ FONTsm = font_add_sprite(sprFontSm, ord(" "), 1, 1);
         draw_set_halign(fa_center);
         draw_set_valign(fa_top);
         // Draw background image
-        draw_sprite_ext(sprMayaFace,0, window_get_width()/2,window_get_height()/3,ROOMSCALE, ROOMSCALE,0,c_white,1);
+        switch(os_type)
+        {
+            case os_android:
+            {
+                draw_sprite_ext(sprMayaFace,0, display_get_width()/2,display_get_height()/3,ROOMSCALE, ROOMSCALE,0,c_white,1);
+                break;
+            }
+            case os_windows:
+            case os_win8native:
+            {
+                draw_sprite_ext(sprMayaFace,0, window_get_width()/2,window_get_height()/3,ROOMSCALE, ROOMSCALE,0,c_white,1);
+                break;
+            }
+            default:
+                break;
+        }
     }
 }
 

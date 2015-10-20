@@ -198,7 +198,6 @@
       <script>scripts\read.gml</script>
       <script>scripts\saveMap.gml</script>
       <script>scripts\scrLevelSelect.gml</script>
-      <script>scripts\scrToolClicked.gml</script>
       <script>scripts\write.gml</script>
     </scripts>
     <script>scripts\scrBackBtnLMB.gml</script>
@@ -309,8 +308,8 @@
     <constant name="USERROOM">"room_User"</constant>
     <constant name="SAVEFILE">"maps.ini"</constant>
     <constant name="LEVELCOUNT">10</constant>
-    <constant name="BTNSPAWNX">16</constant>
-    <constant name="BTNSPAWNY">2.25</constant>
+    <constant name="BTNSPAWNX">12</constant>
+    <constant name="BTNSPAWNY">1.7</constant>
     <constant name="BTNSPEED">0.35</constant>
   </constants>
   <help>

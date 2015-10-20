@@ -1,21 +1,5 @@
 // Clear all objects from the level
 
-with(TOOL01)
-    instance_destroy();
-with(TOOL02)
-    instance_destroy();
-with(TOOL03)
-    instance_destroy();
-with(TOOL04)
-    instance_destroy();
-with(TOOL05)
-    instance_destroy();
-with(TOOL06)
-    instance_destroy();
-with(TOOL07)
-    instance_destroy();
-with(TOOL08)
-    instance_destroy();
 with(objWallTool)
     instance_destroy();
 with(objPlayerTool)

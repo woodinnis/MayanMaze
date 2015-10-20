@@ -879,3 +879,12 @@ FuncRoomNext adjustments
 Corrected pause-restart error in user-created rooms
 - read() function was misinterpreting zero-count objects in the ini file
     this was leading to instantiation of new Overlords at room start
+    
+Test build on Android device
+- All elements playable.
+- Some graphics glitches, mostly consisting of incorrectly positioned menu
+    and overlay elements
+
+Added a test condition for os_type in the pause menu overlay
+- Should correct for incorrectly positioned graphics elements
+
