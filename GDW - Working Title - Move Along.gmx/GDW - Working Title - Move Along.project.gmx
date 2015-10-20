@@ -88,20 +88,6 @@
       <sprite>sprites\sprPlayerRight</sprite>
       <sprite>sprites\sprPlayerDown</sprite>
     </sprites>
-    <sprites name="OBSOLETE">
-      <sprites name="Moving Tiles">
-        <sprite>sprites\sprFourWayArrow</sprite>
-        <sprite>sprites\sprChangingArrow</sprite>
-      </sprites>
-      <sprites name="One Way Walls">
-        <sprite>sprites\sprOneWayRight</sprite>
-        <sprite>sprites\sprOneWayDown</sprite>
-        <sprite>sprites\sprOneWayUp</sprite>
-        <sprite>sprites\sprOneWayLeft</sprite>
-      </sprites>
-      <sprite>sprites\sprBGTile</sprite>
-      <sprite>sprites\sprResetBtn</sprite>
-    </sprites>
     <sprites name="Circle Effect">
       <sprite>sprites\spr_effect</sprite>
     </sprites>
