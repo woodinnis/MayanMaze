@@ -875,3 +875,7 @@ FuncRoomNext adjustments
 - Removing assets caused an error in the room transition function
     the old code has been replaced with a more future-proof function
     which uses macros rather than fixed room names.
+    
+Corrected pause-restart error in user-created rooms
+- read() function was misinterpreting zero-count objects in the ini file
+    this was leading to instantiation of new Overlords at room start
