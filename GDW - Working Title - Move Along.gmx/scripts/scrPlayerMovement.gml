@@ -94,22 +94,15 @@ if(room != roomEditor)
         // If player walks through a door    
         if(place_meeting(x,y,objDoor))
         {
+            objOverlord.gameState = 2;
+            objOverlord.canWalk = false;
+            image_speed = 0;
+            
             // Snap to x,y of door
             move_snap(sprite_width,sprite_height);
             
             // Play door sound
             audio_play_sound(sndDoor,70,false);
-            
-            // Move to next room
-            if(room_exists(room_next(room)))
-            {            
-                surface_reset_target();          
-                
-                // Perform room transition
-                objOverlord.gameState = 2;
-                objOverlord.canWalk = false;
-                image_speed = 0;
-            }
         }
     }
 }

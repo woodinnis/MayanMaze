@@ -870,3 +870,8 @@ Ding-Dong The Witch Is Dead!
 Beginning to clear out obsolete and unused assets
 - Hoping this will provide a solution to the multiple Overlord issue
     in UserRoom
+    
+FuncRoomNext adjustments
+- Removing assets caused an error in the room transition function
+    the old code has been replaced with a more future-proof function
+    which uses macros rather than fixed room names.
