@@ -86,8 +86,6 @@
     <sprite>sprites\sprBackBtn</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bgMaze02</background>
-    <background>background\bgMaze05</background>
     <background>background\bgMayaFace</background>
     <background>background\bgMainMenu</background>
     <background>background\bgGame</background>
@@ -96,14 +94,6 @@
     <background>background\bgMoss1</background>
     <background>background\bgMoss2</background>
     <background>background\bgMoss3</background>
-    <backgrounds name="Levels">
-      <background>background\bgLvl010</background>
-      <background>background\bgLvl008</background>
-      <background>background\bgLvl007</background>
-      <background>background\bgLvl009</background>
-      <background>background\bgLvl006</background>
-    </backgrounds>
-    <background>background\bgToolbar</background>
     <background>background\bgBrickTile</background>
   </backgrounds>
   <paths name="paths"/>
