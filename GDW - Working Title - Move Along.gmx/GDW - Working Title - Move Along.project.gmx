@@ -44,16 +44,6 @@
     <sprites name="Menu">
       <sprites name="Level Select">
         <sprite>sprites\sprLvlEditor</sprite>
-        <sprite>sprites\sprLvlSelect001</sprite>
-        <sprite>sprites\sprLvlSelect002</sprite>
-        <sprite>sprites\sprLvlSelect003</sprite>
-        <sprite>sprites\sprLvlSelect004</sprite>
-        <sprite>sprites\sprLvlSelect005</sprite>
-        <sprite>sprites\sprLvlSelect006</sprite>
-        <sprite>sprites\sprLvlSelect007</sprite>
-        <sprite>sprites\sprLvlSelect008</sprite>
-        <sprite>sprites\sprLvlSelect009</sprite>
-        <sprite>sprites\sprLvlSelect010</sprite>
         <sprite>sprites\sprButton</sprite>
         <sprite>sprites\sprTest</sprite>
       </sprites>
@@ -88,20 +78,6 @@
       <sprite>sprites\sprPlayerRight</sprite>
       <sprite>sprites\sprPlayerDown</sprite>
     </sprites>
-    <sprites name="OBSOLETE">
-      <sprites name="Moving Tiles">
-        <sprite>sprites\sprFourWayArrow</sprite>
-        <sprite>sprites\sprChangingArrow</sprite>
-      </sprites>
-      <sprites name="One Way Walls">
-        <sprite>sprites\sprOneWayRight</sprite>
-        <sprite>sprites\sprOneWayDown</sprite>
-        <sprite>sprites\sprOneWayUp</sprite>
-        <sprite>sprites\sprOneWayLeft</sprite>
-      </sprites>
-      <sprite>sprites\sprBGTile</sprite>
-      <sprite>sprites\sprResetBtn</sprite>
-    </sprites>
     <sprites name="Circle Effect">
       <sprite>sprites\spr_effect</sprite>
     </sprites>
@@ -110,8 +86,6 @@
     <sprite>sprites\sprBackBtn</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bgMaze02</background>
-    <background>background\bgMaze05</background>
     <background>background\bgMayaFace</background>
     <background>background\bgMainMenu</background>
     <background>background\bgGame</background>
@@ -120,14 +94,6 @@
     <background>background\bgMoss1</background>
     <background>background\bgMoss2</background>
     <background>background\bgMoss3</background>
-    <backgrounds name="Levels">
-      <background>background\bgLvl010</background>
-      <background>background\bgLvl008</background>
-      <background>background\bgLvl007</background>
-      <background>background\bgLvl009</background>
-      <background>background\bgLvl006</background>
-    </backgrounds>
-    <background>background\bgToolbar</background>
     <background>background\bgBrickTile</background>
   </backgrounds>
   <paths name="paths"/>
@@ -213,47 +179,6 @@
       <script>scripts\scrArrowCreateUp.gml</script>
       <script>scripts\scrArrowCreateRight.gml</script>
     </scripts>
-    <scripts name="OBSOLETE">
-      <scripts name="Changing">
-        <script>scripts\scrArrowStepChanging.gml</script>
-        <script>scripts\scrArrowCreateChanging.gml</script>
-        <script>scripts\scrArrowChangingMouseLeave.gml</script>
-        <script>scripts\scrArrowChangingMouseEnter.gml</script>
-      </scripts>
-      <scripts name="Four Way">
-        <script>scripts\scrArrowStepFourWay.gml</script>
-        <script>scripts\scrArrowCreateFourWay.gml</script>
-        <script>scripts\scrArrowCollisionFourWay.gml</script>
-        <script>scripts\scrArrowAlarm0FourWay.gml</script>
-      </scripts>
-      <scripts name="One Way Walls">
-        <script>scripts\scrOneWayCreate.gml</script>
-      </scripts>
-      <scripts name="Lights">
-        <script>scripts\scrLightCreate.gml</script>
-        <script>scripts\scrLightBeginStep.gml</script>
-        <script>scripts\scrLightOrbStep.gml</script>
-        <script>scripts\scrLightDraw.gml</script>
-        <script>scripts\scrLightOrbCreate.gml</script>
-      </scripts>
-      <script>scripts\scrOverlordAlarm0.gml</script>
-      <script>scripts\scrPlayerDoorCollision.gml</script>
-      <script>scripts\scrPauseBtnLabels.gml</script>
-      <script>scripts\scrDrawLine.gml</script>
-      <script>scripts\scrQuitBtnLabel.gml</script>
-      <script>scripts\scrOneWayLeftStep.gml</script>
-      <script>scripts\scrArrowCollisionPlayer.gml</script>
-      <script>scripts\scrMenuGUI.gml</script>
-      <script>scripts\scrLvlSelectGUI.gml</script>
-      <script>scripts\scrPlayerClicked.gml</script>
-      <script>scripts\scrRandomArrowGenerator.gml</script>
-      <script>scripts\scrArrowWallCollision.gml</script>
-      <script>scripts\scrOneWayDownStep.gml</script>
-      <script>scripts\scrOneWayUpStep.gml</script>
-      <script>scripts\scrOneWayRightStep.gml</script>
-      <script>scripts\scrResetBtnAlarm0.gml</script>
-      <script>scripts\scrResetBtnPressed.gml</script>
-    </scripts>
     <script>scripts\FuncRoomNext.gml</script>
     <script>scripts\DEBUG_GUI.gml</script>
     <script>scripts\DEBUG_STEP.gml</script>
@@ -289,16 +214,6 @@
       <objects name="Level Select">
         <object>objects\objLvlSelectParent</object>
         <object>objects\objLvlEditor</object>
-        <object>objects\objLvlSelect001</object>
-        <object>objects\objLvlSelect002</object>
-        <object>objects\objLvlSelect003</object>
-        <object>objects\objLvlSelect004</object>
-        <object>objects\objLvlSelect005</object>
-        <object>objects\objLvlSelect006</object>
-        <object>objects\objLvlSelect007</object>
-        <object>objects\objLvlSelect008</object>
-        <object>objects\objLvlSelect009</object>
-        <object>objects\objLvlSelect010</object>
         <object>objects\objButton</object>
         <object>objects\objTest</object>
       </objects>
@@ -327,24 +242,6 @@
       <object>objects\objPauseBtn</object>
       <object>objects\objFFbtn</object>
       <object>objects\objFont</object>
-    </objects>
-    <objects name="OBSOLETE">
-      <objects name="Moving Tiles">
-        <object>objects\objFourWayArrow</object>
-        <object>objects\objChangingArrow</object>
-      </objects>
-      <objects name="Lights">
-        <object>objects\objLightVariable</object>
-        <object>objects\objLightOrb</object>
-      </objects>
-      <objects name="One Way Walls">
-        <object>objects\objOneWayParent</object>
-        <object>objects\objOneWayUp</object>
-        <object>objects\objOneWayRight</object>
-        <object>objects\objOneWayDown</object>
-        <object>objects\objOneWayLeft</object>
-      </objects>
-      <object>objects\objResetBtn</object>
     </objects>
     <object>objects\DEBUG</object>
     <objects name="Circle Effect">
@@ -383,9 +280,6 @@
       <room>rooms\room_Maze008</room>
       <room>rooms\room_Maze009</room>
       <room>rooms\room_Maze010</room>
-    </rooms>
-    <rooms name="OBSOLETE">
-      <room>rooms\room_Pause</room>
     </rooms>
   </rooms>
   <constants number="29">

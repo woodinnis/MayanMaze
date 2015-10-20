@@ -862,3 +862,11 @@ Save prompt
 
 Restart User levels
 - User levels now restart correctly, loading all assets
+
+// 20 October, 2015 //
+
+Ding-Dong The Witch Is Dead!
+
+Beginning to clear out obsolete and unused assets
+- Hoping this will provide a solution to the multiple Overlord issue
+    in UserRoom
