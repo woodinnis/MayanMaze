@@ -314,24 +314,6 @@
       <object>objects\objFFbtn</object>
       <object>objects\objFont</object>
     </objects>
-    <objects name="OBSOLETE">
-      <objects name="Moving Tiles">
-        <object>objects\objFourWayArrow</object>
-        <object>objects\objChangingArrow</object>
-      </objects>
-      <objects name="Lights">
-        <object>objects\objLightVariable</object>
-        <object>objects\objLightOrb</object>
-      </objects>
-      <objects name="One Way Walls">
-        <object>objects\objOneWayParent</object>
-        <object>objects\objOneWayUp</object>
-        <object>objects\objOneWayRight</object>
-        <object>objects\objOneWayDown</object>
-        <object>objects\objOneWayLeft</object>
-      </objects>
-      <object>objects\objResetBtn</object>
-    </objects>
     <object>objects\DEBUG</object>
     <objects name="Circle Effect">
       <object>objects\obj_effect</object>
