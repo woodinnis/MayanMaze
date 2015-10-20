@@ -311,9 +311,6 @@
       <room>rooms\room_Maze009</room>
       <room>rooms\room_Maze010</room>
     </rooms>
-    <rooms name="OBSOLETE">
-      <room>rooms\room_Pause</room>
-    </rooms>
   </rooms>
   <constants number="29">
     <constant name="MOSSCOUNT">20</constant>
