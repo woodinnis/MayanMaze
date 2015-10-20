@@ -44,16 +44,6 @@
     <sprites name="Menu">
       <sprites name="Level Select">
         <sprite>sprites\sprLvlEditor</sprite>
-        <sprite>sprites\sprLvlSelect001</sprite>
-        <sprite>sprites\sprLvlSelect002</sprite>
-        <sprite>sprites\sprLvlSelect003</sprite>
-        <sprite>sprites\sprLvlSelect004</sprite>
-        <sprite>sprites\sprLvlSelect005</sprite>
-        <sprite>sprites\sprLvlSelect006</sprite>
-        <sprite>sprites\sprLvlSelect007</sprite>
-        <sprite>sprites\sprLvlSelect008</sprite>
-        <sprite>sprites\sprLvlSelect009</sprite>
-        <sprite>sprites\sprLvlSelect010</sprite>
         <sprite>sprites\sprButton</sprite>
         <sprite>sprites\sprTest</sprite>
       </sprites>
