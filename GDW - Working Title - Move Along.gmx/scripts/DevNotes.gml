@@ -888,3 +888,6 @@ Test build on Android device
 Added a test condition for os_type in the pause menu overlay
 - Should correct for incorrectly positioned graphics elements
 
+Created new setting for level select buttons
+- New macros for Android x,y will hopefully deal with button positioning
+    Will need to test on multiple devices to be sure this is fixed
