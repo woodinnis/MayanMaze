@@ -13,8 +13,23 @@ lvlCount = 0;
 // Positions
 imgW = sprite_get_width(sprButton);
 imgH = sprite_get_height(sprButton);
-posX = display_get_width()/BTNSPAWNX;
-posY = display_get_height()/BTNSPAWNY;
+switch(os_type) // Set x,y coords based on OS
+{
+    case os_windows:
+    case os_win8native:
+    {
+        posX = display_get_width()/BTNSPAWNX;
+        posY = display_get_height()/BTNSPAWNY;
+        break;
+    }
+    case os_android:
+    default:
+    {
+        posX = window_get_width()/BTNSPAWNXAND;
+        posY = window_get_height()/BTNSPAWNYAND;
+        break;
+    }
+}
 rowCount = 4;
 
 // Verify current room
@@ -57,7 +72,22 @@ if(room == room_UserLvlSelect)
         w++
         if(w > rowCount)
         {
-            posX = display_get_width()/BTNSPAWNX;
+            // Reset x
+            switch(os_type)
+            {
+                case os_windows:
+                case os_win8native:
+                {
+                    posX = display_get_width()/BTNSPAWNX;
+                    break;
+                }
+                case os_android:
+                default:
+                {
+                    posX = window_get_width()/BTNSPAWNXAND;
+                    break;
+                }
+            }
             w = 0;
             h++;
         }
