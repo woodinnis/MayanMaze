@@ -897,3 +897,8 @@ Created new setting for level select buttons
 Level editor sprites
 - Replace sprites for Eraser, and Save tools in level editor. Both are
     now more clear, and more visible, with a full-sprite mask.
+    
+Toolbar background
+- Replaced the toolbar background with a desaturated, low-opacity
+    game graphic. This now helps to accentuate the tools, and reinforce
+    the game brand.
