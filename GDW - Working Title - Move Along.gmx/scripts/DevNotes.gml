@@ -891,3 +891,9 @@ Added a test condition for os_type in the pause menu overlay
 Created new setting for level select buttons
 - New macros for Android x,y will hopefully deal with button positioning
     Will need to test on multiple devices to be sure this is fixed
+    
+// 24 November, 2015 //
+
+Level editor sprites
+- Replace sprites for Eraser, and Save tools in level editor. Both are
+    now more clear, and more visible, with a full-sprite mask.
